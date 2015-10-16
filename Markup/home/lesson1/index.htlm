@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Homework1</title>
+</head> 
+<body>
+<div id="main_box">
+	<p class="header_text">Жебровский Олег Сергеевич</p>
+	<img class="img_center" src="https://goo.gl/P4ypQv" border="0" width="140" height="140" alt="" /> 
+	<div class="inside_box">
+		<p class="other_text">Project manager агентства интернет рекламы "Вместе"</p>
+		<p class = "line"></p>
+		<p class="other_text"> Хочу учить фронтенд, потому что:</p>
+		<ul class="table">
+			<li>Мне это интересно</li>
+			<li>Нравится работать с фронтенд-ом сайтов</li>
+			<li>Уровень зп и привязка к доллару</li>
+		</ul>
+		<p class = "line"></p>
+		<p class="other_text">Мой контактный телефон </br> +380501339565</p>
+		<p class="other_text">Мой профиль вконтакте </br> <a href="https://vk.com/olegzhebrovskyi">vk.com</a></p>
+		<p class = "line"></p>
+		<p class="other_text">Мой фидбек:</br>Если нужно, могу все сделать.</p>
+	</div><!-- inside_box -->
+</div> <!-- main_box -->
+</body>
+</html>
