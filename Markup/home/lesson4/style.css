@@ -1,0 +1,41 @@
+﻿	body {
+		height: 1060px;
+		background: url(background.png) repeat-y;
+	}
+	h1 {
+		color: #4b9db4;
+		font-family: Tahoma;
+		font-size: 12px;
+	}
+	img.google_head {
+		
+	}
+	img.logo {
+
+	}
+	div.main {
+		height: 991px;
+		width: 1018px;
+		background-color: #fff;
+		margin: 0 auto;
+		-webkit-box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.69);
+		-moz-box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.69);
+		box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.69);
+	}
+	div.photo {
+		margin: 0 auto;
+	}
+	div.panel {
+		height: 34px;
+		background-image: url(panel.png);
+	}
+
+
+	/*** HEADER ***/
+
+
+	/*** CONTAINER ***/
+
+	
+	/*** FOOTER ***/
+
