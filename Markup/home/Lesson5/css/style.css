@@ -1,0 +1,218 @@
+﻿@font-face {
+    font-family: 'Helvetica Neue Cyrthin';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrap {
+	 font-family: "Helvetica Neue Cyrthin";
+}
+
+/* Header */
+
+.header {
+	background-image: url(../img/Background-top.png);
+	height: 36px;
+	margin: 0 auto;
+	width: 1215px;
+}
+
+.header ul {
+	float: left;
+	margin-left: 440px;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li a {
+	color: #60b5ed;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header ul li a:hover {
+	background-color: #4eabda;
+	color: #fff;
+}
+
+.login-box {
+	background-image: url(../img/Layer.png);
+	float: right;
+	height: 36px;
+	width: 191px;
+	margin-right: 20px;
+}
+
+.login-text {
+	width: 180px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 13px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.login-text a {
+	color: #fff;
+}
+
+.ofertas {
+	height: 36px;
+	line-height: 36px;
+	width: 161px;
+	float: right;
+	padding-top: 0px;
+}
+
+.ofertas img {
+	padding-top: 2px;
+}
+
+.ofertas span {
+	display: block;
+	float: right;
+	width: 108px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 11px;
+}
+
+/* Content */
+
+.container {
+	background-image: url(../img/background.png);
+	position: relative;
+	height: 1028px;
+	margin: 0 auto;
+	width: 1215px;
+}
+
+.content {
+	height: 614px;
+	width: 560px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -307px;
+	margin-left: -280px;
+}
+
+.cadastre {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 62px;
+	width: 560px;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	text-align: center;
+	line-height: 62px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.registration-form {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 549px;
+	width: 560px;
+	margin: 0 auto;
+}
+
+.registration-form button {
+	padding: 0;
+	border: 0;
+	border-radius: 5px;
+	height: 35px;
+	margin: 36px 142px 25px 142px;
+}
+
+.ou {
+	height: 20px;
+	width: 276px;
+	margin: 0px 142px 25px 142px;
+}
+
+.ou	p {
+	color: #999999;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	background-image: url(../img/Layer2.png);
+
+}
+
+.form1 {
+	margin: 17px 142px 17px 142px;
+}
+
+.form1 input {
+	width: 257px;
+	height: 33px;
+	background-color: #0f0e0e;
+	border: 0;
+	border-bottom: 1px solid #474747;
+	padding-left: 19px;
+}
+
+.form1 input:hover {
+	width: 255px;
+	height: 32px;
+	background-color: #1b5288;
+	box-shadow: 0px 0px 20px 2px rgba(27,82,136,1);
+	border: 1px solid #538cb4
+}
+
+.form2 {
+	margin: 20px 142px 20px 142px;
+}
+
+.form2 label {
+	color: #cccccc;
+	font-size: 14px;
+}
+
+.form2 input {
+
+}
+
+.form3 {
+	height: 31px;
+	width: 151px;
+	margin: 20px 209px 20px 198px;
+}
+
+.form3 input {
+	background-image: url(../img/Button.png);
+	height: 37px;
+	width: 151px;
+	padding: 0;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.form4 {
+	width: 301px;
+	height: 30px;
+	margin: 10px 124px 10px 124px;
+}
+
+.form4 p {
+	color: #cccccc;
+	font-size: 11px;
+	width: 310px;
+	text-align: center;
+	line-height: 15px;
+}

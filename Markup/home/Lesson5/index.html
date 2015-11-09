@@ -2,11 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Homework5</title>
 </head> 
 <body>
-
+	<div class="wrap">
+		<div class="header">
+			<ul>
+				<li><a href="#">Meu YouBike</a></li>
+				<li><a href="#">Vender</a></li>
+				<li><a href="#">Forum</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Ajuda</a></li>
+			</ul>
+			<div class="login-box">
+				<div class="login-text">
+					<span>Ola!</span>
+				<a href="#">Entrar</a>
+					<span>ou</span>
+				<a href="#">Cadastre-se</a>
+				</div> <!-- end login-text -->
+			</div>
+			<div class="ofertas">
+				<img src="img/inventicons.png" alt="inventicons"><span>Minhas Ofertas</span>
+			</div>
+		</div> <!-- end header -->
+		<div class="container">
+			<div class="content">
+				<div class="cadastre">
+					<span>Cadastre-se</span>
+				</div>
+				<div class="registration-form">
+					<button>
+						<img src="img/Facebook.png" alt="Log In with Facebook">
+					</button>
+					<div class="ou">
+						<p>OU</p>
+					</div>
+					<form action="#" method="POST">
+						<div class="form1">
+							<input type="text" name="first-name" placeholder="First Name" required>
+						</div>
+						<div class="form1">
+							<input type="text" name="last-name" placeholder="Last Name" required>
+						</div>
+						<div class="form1">
+							<input type="email" name="email" placeholder="Email Adress" required>
+						</div>
+						<div class="form1">
+							<input type="password" name="password" placeholder="Choose Password">
+						</div class="form1">
+						<div class="form1">
+							<input type="password" name="password-confirm" placeholder="Password Confirm">
+						</div>
+						<div class="form2">
+							<input type="checkbox" id="checkbox">
+							<label for="checkbox">Send me Youbike updates and tips</label>
+						</div>
+						<div class="form3">
+						<input type="submit" value="">	
+						</div>
+					</form>
+					<div class="form4">
+						<p>By clicking the button above, you agree to the Terms of Service <!-- Xiew our Privacy Policy. --></p>
+						<p>Xiew our Privacy Policy.</p>
+					</div>
+				</div> <!-- end registration-form -->
+			</div> <!-- end content -->
+		</div> <!-- end container -->
+	</div> <!-- end wrap -->
 </body>
 </html>
