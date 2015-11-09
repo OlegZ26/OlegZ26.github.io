@@ -139,7 +139,7 @@
 	}
 
 	.menu ul+a:after{
-  		background: url(triangle.png) 0 0 no-repeat;
+  		background: url(../img/triangle.png) 0 0 no-repeat;
   		content: '';
   		display: block;
 		height: 6px;
