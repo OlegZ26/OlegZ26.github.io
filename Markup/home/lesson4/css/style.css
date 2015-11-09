@@ -195,33 +195,6 @@
 		width: 210px;
 		float: left;
 	}
-	/*.leftColumn {
-		background: #edeef0;
-		border-left: 1px solid #c7cacf;
-		border-right: 1px solid #c7cacf;
-		float: left;	
-		margin-bottom: -20000px;
-		padding-bottom: 20000px;
-		width: 208px;
-	}
-
-	.centerColumn {
-		background: #fff;
-		float: left;
-		margin-bottom: -20000px;
-		padding-bottom: 20000px;
-		width: 579px;
-	}
-
-	.rightColumn {
-		background: #edeef0;
-		border-left: 1px solid #c7cacf;
-		border-right: 1px solid #c7cacf;
-		float: left;
-		margin-bottom: -20000px;
-		padding-bottom: 20000px;
-		width: 208px;
-	}*/
 
 	h2 {
 		color: #424c43;
