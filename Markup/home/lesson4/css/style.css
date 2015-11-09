@@ -176,11 +176,26 @@
 	/*** CONTENT ***/
 
 	.content {
-		overflow: hidden;
 		width: 999px;
+		background: url(../img/fon.png);
+		float: left;
 	}
 
 	.leftColumn {
+		width: 210px;
+		float: left;
+	}
+
+	.centerColumn {
+		width: 579px;
+		float: left;
+	}
+
+	.rightColumn {
+		width: 210px;
+		float: left;
+	}
+	/*.leftColumn {
 		background: #edeef0;
 		border-left: 1px solid #c7cacf;
 		border-right: 1px solid #c7cacf;
@@ -206,7 +221,7 @@
 		margin-bottom: -20000px;
 		padding-bottom: 20000px;
 		width: 208px;
-	}
+	}*/
 
 	h2 {
 		color: #424c43;
