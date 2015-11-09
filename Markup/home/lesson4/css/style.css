@@ -1,5 +1,5 @@
 ﻿	body {
-		background: url(background.png) repeat-y;
+		background: url(../img/background.png) repeat-y;
 		height: 1060px;
 	}
 
@@ -72,27 +72,27 @@
 	}
 
 	.nav-countries .i-flag a {
-		background-image: url(i_flag.png);
+		background-image: url(../img/i_flag.png);
 	}
 
 	.nav-countries .n-flag a {
-		background-image: url(n_flag.png);
+		background-image: url(../img/n_flag.png);
 	}
 
 	.nav-countries .t-flag a {
-		background-image: url(t_flag.png);
+		background-image: url(../img/t_flag.png);
 	}
 
 	.nav-countries .b-flag a {
-		background-image: url(b_flag.png);
+		background-image: url(../img/b_flag.png);
 	}
 
 	.nav-countries .s-flag a {
-		background-image: url(s_flag.png);
+		background-image: url(../img/s_flag.png);
 	}
 
 	.nav-countries .m-flag a {
-		background-image: url(m_flag.png);
+		background-image: url(../img/m_flag.png);
 	}
 
 	.photo {
