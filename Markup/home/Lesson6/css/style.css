@@ -113,7 +113,7 @@
     outline: none;
     padding: 0;
     text-align: center;
-    margin-left: 6px;
+    margin-left: 5px;
     width: 28px;
 }
 
@@ -1487,7 +1487,7 @@ footer {
 .footer-nav {
 	height: 34px;
 	margin: 0 auto;
-	width: 330px;
+	width: 336px;
 }
 
 .footer-nav-blocks li {
@@ -1519,7 +1519,7 @@ footer {
 	font-size: 10px;
 	height: 15px;
 	margin: 0 auto;
-	width: 156px;
+	width: 160px;
 }
 
 .developers a {
