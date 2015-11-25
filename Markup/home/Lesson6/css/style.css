@@ -987,10 +987,10 @@
 	float: left;
 	height: 106px;
 	margin-right: 14px;
-	padding-left: 11px;
+	padding-left: 10px;
 	padding-top: 4px;
 	position: absolute;
-	left: 173px;
+	left: 175px;
 	top: 3px;
 	width: 62px;
 }
@@ -1316,9 +1316,10 @@
 .catalog-product-price1 {
 	color: #114165;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 16px;
 	font-style: italic;
 	font-weight: bold;
+	line-height: 22px;
 }
 
 .catalog-product-price2 {
@@ -1391,6 +1392,18 @@
 	width: 106px;
 }
 
+.sitebar-right-tires {
+	height: 72px;
+}
+
+.sitebar-right-tires p {
+	height: 25px;
+}
+
+.sitebar-right-tires p:first-child {
+	margin-top: -1px;
+}
+
 .sitebar-right-wheels-title {
 	border: 1px solid #8b979c;
 	border-radius: 15px;
@@ -1410,6 +1423,14 @@
 	font-size: 14px;
 	line-height: 26px;
 	width: 106px;
+}
+
+.sitebar-right-wheels p {
+	height: 25px;	
+}
+
+.sitebar-right-wheels p:first-child {
+	margin-top: -1px;	
 }
 
 .button-sitebar-right {
