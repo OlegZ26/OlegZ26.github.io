@@ -778,6 +778,7 @@
 
 .search-wheels-numberko h4 {
 	margin-right: 3px;
+	width: 85px;
 }
 
 .search-wheels-numberko span {
@@ -786,7 +787,7 @@
 }
 
 .search-wheels-numberko select {
-	margin-top: 10px;
+	margin: 10px 0 0 2px;
 	width: 49px;
 }
 
@@ -797,6 +798,7 @@
 
 .search-wheels-diameterko h4 {
 	margin-right: 3px;
+	width: 85px;
 }
 
 .search-wheels-diameterko span {
@@ -805,7 +807,7 @@
 }
 
 .search-wheels-diameterko select {
-	margin-top: 10px;
+	margin: 10px 0 0 2px;
 	width: 56px;
 }
 
