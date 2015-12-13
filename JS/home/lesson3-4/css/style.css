@@ -4,10 +4,12 @@
 }
 
 body {
+  font-family: Arial;
   width: 800px;
 }
 
 form {
+  font-family: Arial;
   margin-left: 50px;
   width: 300px;
 }
@@ -25,9 +27,9 @@ form {
 
 .answers {
   cursor: pointer;
+  display: block;
   line-height: 25px;
   margin-left: 70px;
-  display: block;
 }
 
 .answers_checkbox {
