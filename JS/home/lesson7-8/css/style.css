@@ -1,0 +1,92 @@
+#wrap {
+  font-family: Arial;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.selectTabs {
+  background-color: #eee;
+  border: 1px solid #111;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.lineTabs {
+  background-color: #bbb;
+  border: 1px solid #111;
+  border-radius: 3px;
+  height: 30px;
+  margin: 2px 0 0px 2px;
+  padding: 5px;
+  width: 942px;
+}
+
+.lineTabs li {
+  background-color: #eee;
+  border: 1px solid #111;
+  border-radius: 3px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.lineTabs li:first-child {
+  margin-left: 7px;
+}
+
+.lineTabs a {
+  color: #000;
+  text-decoration: none;
+}
+
+.content div {
+  display: none;
+}
+
+.content div:first-child {
+  display: block;
+}
+
+.content div p {
+  margin: 15px;
+}
+
+.forms-place {
+  background-color: #bbb;
+  border: 1px solid #111;
+  border-radius: 3px;
+  height: 180px;
+  margin-top: 5px;
+}
+
+.forms-place div {
+  height: 25px;
+  margin: 15px 0 0 15px;
+}
+
+.formLines label {
+  display: inline-block;
+  width: 100px;
+}
+
+.formLines em {
+  background-color: #fff;
+  border: 1px solid #777;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  display: none;
+  font-style: italic;
+  padding: 4px;
+}
+
+.formsButton {
+  height: 30px;
+  margin: 15px 0 0 120px;
+  width: 170px;
+}
+
+.specom {
+  height: 30px;
+  width: 100px;
+}
