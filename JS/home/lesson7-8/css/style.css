@@ -60,33 +60,36 @@
   margin-top: 5px;
 }
 
-.forms-place div {
+.formLines {
   height: 25px;
   margin: 15px 0 0 15px;
 }
 
 .formLines label {
+  float: left;
   display: inline-block;
   width: 100px;
 }
 
-.formLines em {
+.formLines input {
+  float: left;
+}
+
+.helpTool {
   background-color: #fff;
   border: 1px solid #777;
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5); 
   display: none;
+  float: left;
+  font-size: 13px;
   font-style: italic;
-  padding: 4px;
+  margin-left: 15px;
+  padding: 3px;
 }
 
 .formsButton {
   height: 30px;
   margin: 15px 0 0 120px;
   width: 170px;
-}
-
-.specom {
-  height: 30px;
-  width: 100px;
 }
