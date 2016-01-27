@@ -1,0 +1,112 @@
+div {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*dropdown menu*/
+.menu{
+  background-color: #30333b;
+  margin: 1px 0 5px 0px;
+  z-index: 2;
+}
+
+.menu li{
+  display: inline-block;
+  position: relative;
+  line-height: 40px;
+  width: 150px;
+  background-color: transparent;
+}
+
+.menu li:hover{
+  background-color: #8ebd42;
+}
+
+.menu a {
+  text-align: center;
+  display: block;
+  padding: 0 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu_down {
+  border-right: 1px solid #fff;
+  display: none;
+  position: absolute;
+  padding: 0;
+  z-index: 2;
+}
+
+.submenu_right {
+  border-left: 1px solid #fff;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+/*form_wrapper*/
+.form_wrapper {
+  height: 180px;
+}
+
+/*checkbox js*/
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite.png);
+}
+
+.js_lable {
+  margin-right: 22px;
+}
+
+.niceCheck input {
+  display: none;
+}
+
+/*checkbox css*/
+.css_chk {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.css_label {
+  cursor: pointer;
+}
+
+.css_label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-2.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+
+.css_chk:checked + .css_label:after {
+  background-position: 0 -17px;
+}
+
+.css_label:hover:after {
+  background-position: 0 -34px;
+}
+
+.css_chk:checked + .css_label:hover:after {
+  background-position: 0 -51px;
+}
+

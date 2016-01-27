@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 9-10</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/cusel.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script src="js/jquery-migrate-1.1.1.min.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/cusel.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jScrollPane.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!-- dropdown menu -->
+    <ul class="menu">
+        <li>
+            <a href="#">Menu 1</a>
+        </li>
+        <li>
+            <a href="#">Menu 2&#9660;</a>
+            <ul class="submenu_down">
+                <li>
+                    <a href="#">Menu 2.1</a>
+                </li>
+                <li>
+                    <a href="#">Menu 2.2</a>
+                </li>
+                <li>
+                    <a href="#">Menu 2.3</a>
+                </li>
+                <li>
+                    <a href="#">Menu 2.4</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 3&#9660;</a>
+            <ul class="submenu_down">
+                <li>
+                    <a href="#">Menu 3.1</a>
+                </li>
+                <li>
+                    <a href="#">Menu 3.2&#9658;</a>
+                      <ul class="submenu_right">
+                        <li>
+                            <a href="#">Menu 3.2.1</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.2.2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.2.3</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.2.4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menu 3.3&#9658;</a>
+                    <ul class="submenu_right">
+                        <li>
+                            <a href="#">Menu 3.3.1</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.3.2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.3.3</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3.3.4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menu 3.4</a>
+                 </li>
+                <li>
+                    <a href="#">Menu 3.5</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 4</a>
+        </li>
+        <li>
+            <a href="#">Menu 5</a>
+        </li>
+        <li>
+            <a href="#">Menu 6</a>
+        </li>
+        <li>
+            <a href="#">Menu 7</a>
+        </li>
+        <li>
+            <a href="#">Menu 8</a>
+        </li>
+    </ul>
+    <div class="wrapper">
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/600x400.1.jpg" width="700" height="400" alt="1"></li>
+                    <li><img src="img/600x400.2.jpg" width="700" height="400" alt="2"></li>
+                    <li><img src="img/600x400.3.jpg" width="700" height="400" alt="3"></li>
+                    <li><img src="img/600x400.4.jpg" width="700" height="400" alt="4"></li>
+                    <li><img src="img/600x400.5.jpg" width="700" height="400" alt="5"></li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            
+            <p class="jcarousel-pagination">
+
+            </p>
+        </div>
+        <div class="form_wrapper">
+            <select>
+                <option value="">Украина</option>
+                <option value="">Англия</option>
+                <option value="">Франция</option>
+                <option value="">Испания</option>
+                <option value="">Италия</option>
+                <option value="">Швейцария</option>
+                <option value="">Швеция</option>
+                <option value="">Венгрия</option>
+                <option value="">Португалия</option>
+                <option value="">Шотландия</option>
+                <option value="">Ирландия</option>
+                <option value="">Финляндия</option>
+                <option value="">Северная Ирландия</option>
+            </select>
+<!-- checkbox js -->
+            <div>
+                <label class="js_lable" for="ch1">checkbox js 1:</label>
+                <span class="niceCheck">
+                    <input id="ch1" type="checkbox" name="ch1" />
+                </span>  
+            </div>
+            <div>
+                <label class="js_lable" for="ch2">checkbox js 2:</label>  
+                <span class="niceCheck">
+                    <input id="ch2" type="checkbox" name="ch2" />
+                </span>
+            </div>
+<!-- checkbox css -->
+            <div>
+                <input class="css_chk" type="checkbox" id="test-check1">
+                <label class="css_label" for="test-check1">checkbox css 1:</label>
+            </div>
+            <div>
+                <input class="css_chk" type="checkbox" id="test-check2">
+                <label class="css_label" for="test-check2">checkbox css 2:</label>
+            </div>
+        </div> <!-- end form_wrapper -->
+    </div> <!-- end wrapper -->
+</body>
+</html>
