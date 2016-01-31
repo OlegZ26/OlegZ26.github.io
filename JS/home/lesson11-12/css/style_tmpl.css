@@ -1,0 +1,43 @@
+body {
+  background-color: #ededed
+}
+
+#main_box {
+  width: 512px;
+  height: 650px;
+  background-color: white;
+  margin:0 auto;
+  box-shadow: 0 0 3px grey;
+}
+
+.inside_box {
+  width: 512px;
+  height: 50px;
+}
+
+.header_text {
+  padding: 20px 0 0 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.img_center {
+  display:block; 
+  margin:0 auto;
+}
+
+.other_text {
+  padding: 10px 0 0 60px;
+}
+
+.line {
+  width: 400px;
+  height: 1px;
+  background: #333; 
+  margin: 5px 0 5px 45px; 
+}
+
+.table {
+  padding-left: 80px;
+}
