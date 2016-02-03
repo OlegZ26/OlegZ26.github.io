@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript 13-14</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<script type="text/html" id="testTmpl">
+<div class=".col-md-12">
+  <h2 class="text-center">Тест</h2>
+    <% for (var i = 0; i < data.length; i++) { %>
+              <h4 class="text-left">№<%=[i + 1]%><%=data[i].question%></h4>
+                <ul>
+                  <% for (var j = 0; j<data[i].answer.length; j++) { %>
+                    <li>
+                      <label class="checkbox-inline">
+                        <input type="checkbox"><%=data[i].answer[j]%>
+                      </label>
+                    </li>
+                  <%}; %>
+                </ul>
+    <% }; %>
+    <input class="btn btn-success btn-lg center-block" type="submit" value="Проверить мои результаты"></input>
+</div>
+</script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
