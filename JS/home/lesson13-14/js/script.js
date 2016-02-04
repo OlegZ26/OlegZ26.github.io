@@ -5,41 +5,41 @@ $(function() {
   var test = [
     {
       question: ' Какой формат передачи данных наиболее распостранен?',
-      answer: [
-        ' a. SQL',
-        ' b. TXT',
-        ' c. XML',
-        ' d. JSON'
+      answers: [
+        ' SQL',
+        ' TXT',
+        ' XML',
+        ' JSON'
       ],
       correct: [4]
     },
     {
       question: ' Какой объект для работы с XML файлами втроен во все современные браузеры?',
-      answer: [
-        ' a. XMLHttpRequers',
-        ' b. XML',
-        ' c. XMLParser',
-        ' d. Такого объекта нет. Необходимо пользоваться внешними библиотеками.'
+      answers: [
+        ' XMLHttpRequers',
+        ' XML',
+        ' XMLParser',
+        ' Такого объекта нет. Необходимо пользоваться внешними библиотеками.'
       ],
       correct: [4]
     },
     {
       question: ' Какой объект для работы с JSON файлами втроен во все современные браузеры?',
-      answer: [
-        ' a. Json',
-        ' b. JSON',
-        ' c. Такого объекта нет. Необходимо пользоваться внешними библиотеками.',
-        ' d. JSONParser'
+      answers: [
+        ' Json',
+        ' JSON',
+        ' Такого объекта нет. Необходимо пользоваться внешними библиотеками.',
+        ' JSONParser'
       ],
       correct: [2]
     },
     {
       question: ' С помощью какого объекта осуществляется доступ к локальному хранилищу в современных браузерах?',
-      answer: [
-        ' a. LocalStorage',
-        ' b. localStorage',
-        ' c. Storage',
-        ' d. cookies'
+      answers: [
+        ' LocalStorage',
+        ' localStorage',
+        ' Storage',
+        ' cookies'
       ],
       correct: [2]
     }
@@ -55,7 +55,6 @@ $(function() {
   });
 
   $('body').append(content);
-
 
 
 
