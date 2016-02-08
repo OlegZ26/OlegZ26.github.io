@@ -1,0 +1,80 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+h4 a {
+  color: #1a0dab;
+}
+
+.text-center {
+  position: relative;
+  margin: 60px auto;
+}
+
+.text-center span {
+  font-size: 74px;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.blue {
+  color:#4285f4;
+}
+
+.red {
+  color:#ea4335;
+}
+
+.yellow {
+  color:#fbbc05;
+}
+
+.green {
+  color:#34a853;
+}
+
+.Ukraine {
+  top: 80px;
+  left: 640px;
+  color: #4285f4;
+  font-size: 16px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.box {
+  margin-bottom: 30px
+}
+
+input[type=text] {
+  height: 38px;
+  min-width: 300px;
+  width: 50%;
+}
+
+input[type="submit"], input[type="button"] {
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-size: 13px;
+  font-weight: bold;
+  height: 36px;
+  line-height: 27px;
+  margin: 30px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+  cursor: default;
+}
+
+

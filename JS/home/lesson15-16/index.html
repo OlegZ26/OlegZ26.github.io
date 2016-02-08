@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 15-16</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <span class="blue">G</span>
+      <span class="red">o</span>
+      <span class="yellow">o</span>
+      <span class="blue">g</span>
+      <span class="green">l</span>
+      <span class="red">e</span>
+      <div class="Ukraine">Україна</div>
+    </div>
+    
+    <form class="text-center" id = "textForm">
+        <input type="text" id = "questionForm"/>
+        <div> 
+          <input type="submit" id = "search" value="Пошук Google" />
+          <input type="button" id = "" value="Мені пощастить" />
+        </div>
+    </form>
+  
+    <div class ="results"></div>
+  </div>
+  
+  <script type="text/html" id = "resultsGoogle">
+    <% for (var i =0; i<results.length; i++) { %>
+    <div class="box">
+      <h4><a href="<%=results[i].url%>" title="<%=results[i].url%>" target="_blank">
+      <%=results[i].title%></a></h4>
+      <a href="<%=results[i].url%>" title="<%=results[i].url%>" target="_blank" style = "color: #006621">
+      <%=results[i].visibleUrl%></a>
+       <p><%=results[i].content%></p> 
+    </div>
+    <%}; %>  
+  </script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
