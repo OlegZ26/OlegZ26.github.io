@@ -1,0 +1,41 @@
+.main_box {
+  background-color: white;
+  box-shadow: 0 0 3px grey;
+  height: 650px;		
+  margin: 0 auto;
+  width: 512px;
+}
+
+.inside_box {
+  height: 50px;
+  width: 512px;
+}
+
+.header_text {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.img_center {
+  display: block; 
+  height: 150px;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.other_text {
+  padding: 10px 0 0 60px;
+}
+
+.line {
+  background: #333; 
+  height: 1px;
+  margin: 5px 0 5px 45px; 
+  width: 400px;
+}
+
+.table {
+  padding-left: 80px;
+}

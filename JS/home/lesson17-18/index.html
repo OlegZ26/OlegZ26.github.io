@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 17-18</title>
+  <!-- -------------------------------------- -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_tmpl.css">
+</head>
+<body>
+  <script type="text/html" id="profile_tmpl">
+    <div class="main_box">
+      <p class="header_text"><%= name %></p>
+      <img class="img_center" src=<%= img %> alt="User image">
+      <div class="inside_box">
+        <p class="other_text"><%= job %></p>
+        <p class="line"></p>
+        <p class="other_text"> Скилы:</p>
+          <ul class="table">
+            <% for ( var i = 0; i < skills.length; i++ ) { %>
+              <li><%= skills[i].skill %></li>
+            <% } %>
+          </ul>
+        <p class="line"></p>
+        <p class="other_text">Контактный телефон: </br> <%= phoneNumber %></p>
+        <p class="other_text">Профиль Facebook: </br> <a href="<%= facebook %>">Facebook</a></p>
+        <p class="line"></p>
+        <p class="other_text">Фидбек: </br> <%= feedback %></p>
+      </div>
+    </div>
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/dist/script.main.js"></script>
+</body>
+</html>
