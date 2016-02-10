@@ -1,29 +1,51 @@
 module.exports = function(grunt) {
 
   // Project configuration.
-  grunt.initConfig({
-    concat: {
+grunt.initConfig({
+  concat: {
+    css: {
+      src: ['css/init/*.css'],
+      dest: 'css/dist/style.main.css'
+    },
+    js: {
       options: {
         separator: ';',
       },
-      dist: {
-        src: ['js/src/*.js'],
-        dest: 'js/dist/script.main.js',
-      },
-    },
-    uglify: {
-      disc: {
-        src: ['js/dist/script.main.js'],
-        dest: 'js/dist/script.main.min.js'
-      }
+      src: ['js/src/*.js'],
+      dest: 'js/dist/script.main.js',
     }
-  });
+  },
+  cssmin: {
+    css: {
+      src: 'dist/app.css',
+      dest: 'dist/app.min.css'
+    }
+  },
+  uglify: {
+    js: {
+      src: ['js/dist/script.main.js'],
+      dest: 'js/dist/script.main.min.js'
+    }
+  },
+  watch: {
+    css: {
+      files: ['css/init/*.css'],
+      tasks: ['concat:css', 'cssmin:css']
+    },
+    js: {
+      files: ['js/src/*.js'],
+      tasks: ['concat:js', 'uglify:js']
+    }
+  }
+});
 
   // Load the plugins that provides the "concat","uglify" tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 
 };
