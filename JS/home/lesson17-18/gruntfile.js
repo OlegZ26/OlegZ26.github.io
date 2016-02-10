@@ -17,8 +17,8 @@ grunt.initConfig({
   },
   cssmin: {
     css: {
-      src: 'dist/app.css',
-      dest: 'dist/app.min.css'
+      src: 'css/dist/style.main.css',
+      dest: 'css/dist/style.main.min.css'
     }
   },
   uglify: {
