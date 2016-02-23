@@ -1,43 +1,104 @@
-footer {
-
-}
-
 .footer-menu-wrap {
-
+    background-color: #2a2d32;
+    min-width: 1160px;
+    padding-bottom: 70px;
+    padding-top: 60px;
 }
 
 .footer-menu {
+    width: 260px;
+    float: left;
+    margin-right: 40px;
+}
 
+.footer-menu:last-child {
+    margin-right: 0;
 }
 
 .footer-menu__title {
-
+    color: #fff;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
 }
 
 .footer-menu__item {
+    border-bottom: 1px solid #393c40;
+}
 
+.footer-menu__item:last-child {
+    border-bottom: none;
 }
 
 .footer-menu__link {
+    color: #8a8a8a;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 35px;
+    text-decoration: none;
+}
 
+.footer-menu__link:hover {
+    color: #248cec;
 }
 
 .footer-bottom-info {
-
+    background-color: #35383c;
+    color: #8a8a8a;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 60px;
+    min-width: 1160px;
 }
 
 .footer-bottom-info__adress {
+    margin-right: 35px;
+}
 
+.footer-bottom-info__adress:before {
+    background: transparent url(../img/contact_icons.png) 0 0 no-repeat;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-right: 10px;
+    width: 13px;
 }
 
 .footer-bottom-info__phone {
+    margin-right: 35px;
+}
 
+.footer-bottom-info__phone:before {
+    background: transparent url(../img/contact_icons.png) -13px 0 no-repeat;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-right: 10px;
+    width: 13px;
 }
 
 .footer-bottom-info__email {
+    margin-right: 35px;
+}
 
+.footer-bottom-info__email:before {
+    background: transparent url(../img/contact_icons.png) -27px 0 no-repeat;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-bottom: -3px;
+    margin-right: 10px;
+    width: 18px;
 }
 
 .footer-bottom-info__copy {
-
+    float: right;
 }

@@ -1,20 +1,80 @@
 .services-wrap {
-
+    background-color: #2a2d32;
+    margin-top: 60px;
+    min-width: 1160px;
+    padding-bottom: 40px;
 }
 
 .services-wrap__title {
-
+    color: #fff;
+    font-family: $font-stack;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120px;
 }
 
 .service {
+    cursor: pointer;
+    float: left;
+    margin-right: 40px;
+}
 
+.service:last-child {
+    margin-right: 0;
 }
 
 .service__img {
+    background-image: url(../img/service1.jpg);
+    background-position: -170px 0;
+    display: block;
+    height: 260px;
+    width: 260px;
+}
 
+.service__img--second {
+    background-image: url(../img/service2.jpg);
+    background-position: -125px 0;
+}
+
+.service__img--third {
+    background-image: url(../img/service3.jpg);
+    background-position: 0 0;
+}
+
+.service__img--fourth {
+    background-image: url(../img/service4.jpg);
+    background-position: -55px 0;
+}
+
+.service__hover {
+    background-color: transparent;
+    background-image: url("");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0 0;
+    display: block;
+    height: 100%;
+    transition: background-color 0.5s, background-size 0.2s, cubic-bezier(.5,.31,.58,1.06);
+    width: 100%;
+}
+
+.service:hover .service__hover {
+    background-color: rgba(36, 140, 236, 0.8);
+    background-image: url(../img/hover_plus.png);
+    background-size: 35px 35px;
 }
 
 .service__name {
+    color: #fff;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 75px;
+    text-align: center;
+    transition: color 0.2s;
+}
 
+.service:hover .service__name {
+    color: #f4b60d;
 }
 

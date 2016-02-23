@@ -1,9 +1,6 @@
 .banners {
-
-}
-
-.news__title {
-
+    float: right;
+    width: 560px;
 }
 
 .banner {
@@ -11,13 +8,59 @@
 }
 
 .banner__tab {
+    border: 1px #e8e8e8 solid;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 38px;
+    position: relative;
+}
 
+.banner__tab:before {
+    color: #2a2d32;
+    content: "+";
+    font-size: 27px;
+    left: 11px;
+    position: absolute;
+    top: 4px;
+}
+
+.banner__tab--active {
+    background-color: #f4b60d;
+    border: 1px #f4b60d solid;
+}
+
+.banner__tab--active:before {
+    color: #fff;
+    content: "-";
+    left: 14px;
+    top: 2px;
 }
 
 .banner__title {
+    border-left: 1px #e8e8e8 solid;
+    color: #2a2d32;
+    font-family: $font-stack;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 37px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
 
+.banner__title--active {
+    border-left: 1px #f6c53d solid;
+    color: #fff;
 }
 
 .banner__text {
-
+    color: #8a8a8a;
+    display: none;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    height: 100px;
+    line-height: 20px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    padding: 25px 0 0 40px;
 }
