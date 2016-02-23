@@ -1,0 +1,96 @@
+header {
+    padding-bottom: 37px;
+    padding-top: 37px;
+}
+
+.logo {
+    background: #fff url(..\img\logo.jpg) 0 0 no-repeat;
+    float: left;
+    padding-left: 48px;
+}
+
+.logo__top-text {
+    color: #434343;
+    font-family: $font-stack;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+}
+
+.logo__bot-text{
+    color: #333333;
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.22rem;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials__item {
+    float: right;
+    padding: 0 8px;
+}
+
+.socials__link {
+    display: inline-block;
+    height: 20px;
+    opacity: 0.2;
+    width: 16px;
+}
+
+.socials__link--facebook {
+    background: url(..\img\social_icons.png);
+    background-position: 5px 0;
+}
+
+.socials__link--facebook:hover {
+    opacity: 1;
+    background-position: 5px 22px;
+}
+
+.socials__link--twitter {
+    background: url(..\img\social_icons.png);
+    background-position: 28px 0;
+}
+
+.socials__link--twitter:hover {
+    opacity: 1;
+    background-position: 28px 22px;
+}
+
+.socials__link--rss {
+    background: url(..\img\social_icons.png);
+    background-position: 80px 0;
+}
+
+.socials__link--rss:hover {
+    opacity: 1;
+    background-position: 80px 22px;
+}
+
+.socials__link--linkedin {
+    background: url(..\img\social_icons.png);
+    background-position: 107px 0;
+}
+
+.socials__link--linkedin:hover {
+    opacity: 1;
+    background-position: 107px 22px;
+}
+
+.socials__link--skype {
+    background: url(..\img\social_icons.png);
+    background-position: 55px 0;
+}
+
+.socials__link--skype:hover {
+    opacity: 1;
+    background-position: 55px 22px;
+}
