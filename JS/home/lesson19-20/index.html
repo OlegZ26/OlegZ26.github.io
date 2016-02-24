@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="dist/style/reset.css">
   <link rel="stylesheet" href="dist/style/style.main.min.css">
+  <link rel="stylesheet" href="dist/style/slider.css">
 </head>
 <body>
 		<div class="main-wrap clearfix">
@@ -57,25 +58,14 @@
 			</nav>
 
 			<!-- Slider -->
-
-			<div class="flexslider">
-  				<ul class="slides">
-    				<li>
-      					<img src="dist/img/slider1.jpg" />
-    				</li>
-   					<li>
-      					<img src="dist/img/slider2.jpg" />
-    				</li>
-    				<li>
-      					<img src="dist/img/slider3.jpg" />
-    				</li>
-  				</ul>
-			</div>
-			<div class="custom-navigation">
-  				<a href="#" class="flex-prev">Prev</a>
-  				<div class="custom-controls-container"></div>
-  				<a href="#" class="flex-next">Next</a>
-			</div>
+            <section class="slider">
+                <div id="owl-example" class="owl-carousel">
+                    <div class="owl-carousel-item"><img src="dist/img/slider1.jpg"></div>
+                    <div class="owl-carousel-item"><img src="dist/img/slider2.jpg"></div>
+                    <div class="owl-carousel-item"><img src="dist/img/slider1.jpg"></div>
+                    <div class="owl-carousel-item"><img src="dist/img/slider2.jpg"></div>
+                </div>
+            </section>
 
 			<!-- Benefits -->
 
@@ -320,15 +310,6 @@
 		</footer>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="dist/js/script.js"></script>
-<script src="dist/js/jquery.flexslider.js"></script>
-<<script type="text/javascript">
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlsContainer: $(".custom-controls-container"),
-    customDirectionNav: $(".custom-navigation a")
-  });
-});
-</script>
+<script src="dist/js/owl.carousel.min.js"></script>
 </body>
 </html>
