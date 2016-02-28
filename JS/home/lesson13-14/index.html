@@ -3,41 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>JavaScript 13-14</title>
-<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/modal.css">
-
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
-<script type="text/html" id="testTmpl">
-  <div class=".col-md-12">
-    <h2 class="text-center">Тест</h2>
-      <% for (var i = 0; i < data.length; i++) { %>
-        <h4 class="text-left">№<%=[i + 1]%><%=data[i].question%></h4>
-          <ul>
-            <% for (var j = 0; j < data[i].answers.length; j++) { %>
-              <li>
-                <label class="checkbox-inline">
-                  <input type="checkbox"><%=data[i].answers[j]%>
-                </label>
-               </li>
-            <%}; %>
-          </ul>
-      <% }; %>
-    <input class="btn btn-success btn-lg center-block" type="submit" value="Проверить мои результаты" id="go"></input>
+  <div class="container">
+      <h2 class="text-left">Тест по программированию</h2>
+    <form>
+      <div class="questions">
+      </div>
+      <div class="submit">
+        <button type="submit" class="check btn btn-success btn-primary">Проверить результаты</button>
+        <button type="reset" class="reset btn btn-danger btn-sm">Сбросить ответы</button>
+      </div>
+    </form>
   </div>
-</script>
-<div id="modal">
-  <span id="modal_close">X</span>
-  <div class="modal_results">
-    <p>Тут вставлю лезультаты теста</p>
-  </div>
-</div>
-<div id="overlay"></div>
+  <script type="text/html" id = "test">
+    <% for (var i = 0; i <data.length; i++) { %>                 <!-- цикл вывода вопросов for -->
+      <div class="box<%=i%>">                                    <!-- контейнер с вопросом, ответом и чекбокс -->
+        <h4><%=data[i].question%></h4>                           <!-- сам текст вопроса -->
+        <% for (var k = 0; k <data[i].answer.length; k++) { %>   <!-- цикл вывода вариантов ответов for -->
+          <div class="checkbox">                                 <!-- контейнер с ответом и чекбоксом -->
+              <label>                                            <!-- сам текст ответа -->
+                <input type="checkbox"><%=data[i].answer[k]%>    <!-- соответственный ответу чекбокс -->
+              </label>
+          </div>
+        <%}; %>
+      </div>
+    <%}; %>
+  </script>
 <script src="js/tmpl.js"></script>
 <script src="js/script.js"></script>
-<script src="js/modal.js"></script>
 </body>
 </html>
