@@ -1,0 +1,36 @@
+* {
+  font-family: Arial;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.item-page-elem {
+  margin: 15px 0;
+}
+
+.item-text-edit{
+  width: 250px;
+}
+
+.item-edit {
+  visibility: hidden;
+}
+
+.item-value {
+  width: 200px;
+}
+
+.item-add {
+  width: 45px;
+}
