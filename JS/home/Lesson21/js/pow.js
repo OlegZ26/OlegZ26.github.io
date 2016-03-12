@@ -1,16 +1,13 @@
 'use strict';
 
 function pow(x, n) {
-  var result = 1;
-
-  for (var i = 0; i < n; i++) {
-    result *=x;
+  var result = x;
+  for (var i = 1; i < n; i++) {
+    result *= x;
   }
-
   return result;
 }
+console.log( pow(-4, -4) );
 
-var x;
-var n;
 
 module.exports = pow;
