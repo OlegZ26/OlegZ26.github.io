@@ -96,7 +96,7 @@ h2 {
     padding: 35px 10px 10px 10px;
 
     &__step {
-        background: url(../img/slider_1.png) no-repeat;
+        background: url(../img/slider_1.jpg) no-repeat;
         border-radius: 3px;
         height: 240px;
         margin: 10px auto;
@@ -104,10 +104,10 @@ h2 {
         width: 300px;
     }
     &__step--step2 {
-        background: url(../img/slider_2.png) no-repeat;
+        background: url(../img/slider_2.jpg) no-repeat;
     }
     &__step--step3 {
-        background: url(../img/slider_3.png) no-repeat;
+        background: url(../img/slider_3.jpg) no-repeat;
     }
     &__button {
         background-color: $red-color;
@@ -149,6 +149,55 @@ h2 {
         position: absolute;
         top: 155px;
         width: 260px;
+    }
+}
+
+.wrap-jcarousel {
+    width: 320px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.jcarousel {
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+
+    ul {
+        width: 20000em;
+        position: relative;
+
+        li {
+            float: left;
+            list-style: none;
+        }
+    }
+}
+
+.jcarousel-prev {
+    position: absolute;
+    background: url(../img/arrow_left.png) center no-repeat;
+    top: 45px;
+    left: 25px;
+    height: 40px;
+    width: 50px;
+    &:hover {
+        background-color: rgba(255,255,255, 0.2);
+        border-radius: 30px;
+    }
+}
+
+.jcarousel-next {
+    position: absolute;
+    background: url(../img/arrow_right.png) center no-repeat;
+    top: 45px;
+    left: 220px;
+    height: 40px;
+    width: 50px;
+    &:hover {
+        background-color: rgba(255,255,255, 0.2);
+        border-radius: 30px;
     }
 }
 
@@ -344,9 +393,6 @@ footer {
     .logo {
         float: left;
         margin: 50px 0 0 50px;
-        &__link {
-
-        }
     }
 
     .promo {
@@ -377,12 +423,6 @@ footer {
             margin: 20px 10px;
             width: 236px;
         }
-        &__step--step2 {
-
-        }
-        &__step--step3 {
-
-        }
         &__button {
             top: 212px;
         }
@@ -405,9 +445,33 @@ footer {
         }
     }
 
-    .guide-wrapper {
-        margin: 0 auto;
+    .wrap-jcarousel {
         width: 768px;
+    }
+
+    .jcarousel {
+        width: 256px;
+        float: left;
+    }
+
+    .jcarousel-prev {
+        top: 65px;
+        left: 12px;
+        height: 55px;
+        width: 55px;
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .jcarousel-next {
+        top: 65px;
+        left: 189px;
+        height: 55px;
+        width: 55px;
+        &:hover {
+            border-radius: 27px;
+        }
     }
 
     .partners {
@@ -435,29 +499,6 @@ footer {
         width: 250px;
         float: left;
         margin: 20px 0px 20px 0px;
-
-        &__photo {
-
-        }
-        &__ellipse {
-
-        }
-        &__ellipse-shape {
-
-        }
-        &__text {
-
-        }
-        &__name {
-
-        }
-        &__description {
-
-        }
-    }
-
-    .activities {
-
     }
 
     .activities-img {
@@ -468,12 +509,6 @@ footer {
         width: 650px;
         margin: 0 auto;
 
-        &__form {
-
-        }
-        &__question {
-
-        }
         &__input {
             height: 38px;
             float: left;
@@ -484,10 +519,6 @@ footer {
             width: 158px;
             margin: 28px 0 100px 0;
         }
-    }
-
-    footer {
-
     }
 
     .footer-wrapper {
@@ -509,17 +540,12 @@ footer {
         &__title {
             margin: 40px 0 13px 0;
         }
-        &__wrapper {
-
-        }
         &__item {
             float: none;
             text-align: left;
             margin: 5px 8px;
         }
-        &__link {
 
-        }
     }
 
     .designed-by {
@@ -529,8 +555,6 @@ footer {
 }
 
 @media screen and (min-width:960px) {
-    h2 {
-    }
 
     .header-wrapper {
         width: 940px;
@@ -540,29 +564,8 @@ footer {
         width: 940px;
     }
 
-    .authorization {
-
-        &__button-log-in {
-        }
-        &__button-sing-up {
-        }
-    }
-
     .logo {
         margin-left: 20px;
-        &__link {
-
-        }
-    }
-
-    .promo {
-
-        &__slogan {
-        }
-        &__second {
-        }
-        &__button {
-        }
     }
 
     .guide {
@@ -570,8 +573,6 @@ footer {
         &__step {
             width: 300px;
             margin: 20px 20px 10px 0;
-        }
-        &__step--step2 {
         }
         &__step--step3 {
             margin: 20px 0 10px 0;
@@ -592,20 +593,46 @@ footer {
             top: 315px;
             width: 260px;
         }
-        &__text--2 {
-        }
     }
 
     .guide-wrapper {
-        margin: 0 auto;
         width: 940px;
     }
 
-    .partners {
+    .wrap-jcarousel {
+        width: 940px;
+        margin: 10px auto;
+    }
 
-        &__button {
+    .jcarousel {
+        margin: 0 auto;
+        margin-right: 20px;
+        width: 300px;
+
+        &:last-child {
+            margin-right: 0px;
         }
-        button {
+    }
+
+    .jcarousel-prev {
+        top: 185px;
+        left: 5px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .jcarousel-next {
+        top: 185px;
+        left: 240px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
         }
     }
 
@@ -615,63 +642,9 @@ footer {
 
     .partner {
         width: 235px;
-
-        &__photo {
-        }
-        &__ellipse {
-        }
-        &__ellipse-shape {
-        }
-        &__text {
-        }
-        &__name {
-        }
-        &__description {
-        }
-    }
-
-    .activities {
-
-    }
-
-    .activities-img {
-    }
-
-    .activities-search {
-
-        &__form {
-        }
-        &__question {
-        }
-        &__input {
-        }
-        &__button {
-        }
-    }
-
-    footer {
-
     }
 
     .footer-wrapper {
         width: 940px;
-    }
-
-    .footer-logo {
-    }
-
-    .footer-menu {
-
-        &__title {
-        }
-        &__wrapper {
-        }
-        &__item {
-        }
-        &__link {
-        }
-    }
-
-    .designed-by {
     }
 }
