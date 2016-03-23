@@ -1,0 +1,677 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "partials/mixins";
+
+
+header {
+    background: url(../img/main_header.png) 50% no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+h2 {
+    color: #333;
+    font-family: $montserrat-bold;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 290px;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    padding-bottom: 122px;
+    width: 320px;
+}
+
+.authorization {
+    margin-bottom: 112px;
+
+    &__button-log-in {
+        color: $main-text-color;
+        cursor: pointer;
+        float: left;
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        margin: 28px 0 0 83px;
+        text-decoration: none;
+    }
+    &__button-sing-up {
+        @extend .authorization__button-log-in;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        margin: 21px 86px 0 0;
+        text-align: center;
+        width: 85px;
+    }
+}
+
+.logo {
+    text-align: center;
+
+    &__link {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+    }
+}
+
+.promo {
+
+    &__slogan {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__second {
+        color: $main-text-color;
+        font-family: $roboto-light;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        width: 220px;
+    }
+    &__button {
+        @include button;
+        background-color: $red-color;
+        color: $main-text-color;
+        display: block;
+        margin: 16px auto;
+        text-align: center;
+        text-decoration: none;
+        width: 280px;
+    }
+}
+
+.guide {
+    padding: 35px 10px 10px 10px;
+
+    &__step {
+        background: url(../img/slider_1.png) no-repeat;
+        border-radius: 3px;
+        height: 240px;
+        margin: 10px auto;
+        position: relative;
+        width: 300px;
+    }
+    &__step--step2 {
+        background: url(../img/slider_2.png) no-repeat;
+    }
+    &__step--step3 {
+        background: url(../img/slider_3.png) no-repeat;
+    }
+    &__button {
+        background-color: $red-color;
+        border-radius: 10px;
+        color: $main-text-color;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 20px;
+        left: 20px;
+        letter-spacing: 2px;
+        line-height: 21px;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        top: 70px;
+        width: 70px;
+    }
+    &__button--step2 {
+        top: 100px;
+    }
+    &__title {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 24px;
+        font-weight: bold;
+        left: 20px;
+        position: absolute;
+        top: 82px;
+    }
+    &__title--step2 {
+        top: 110px;
+    }
+    &__text {
+        color: $main-text-color;
+        font-family: $roboto-light;
+        font-size: 14px;
+        left: 20px;
+        position: absolute;
+        top: 155px;
+        width: 260px;
+    }
+}
+
+.partners {
+    margin-bottom: 36px;
+    margin-top: 15px;
+
+    &__button {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 280px;
+    }
+    button {
+        @include button;
+        border: 2px solid $red-color;
+        background-color: #fff;
+        color: $red-color;
+        letter-spacing: 1px;
+        margin: 16px auto;
+        text-align: center;
+        width: 280px;
+    }
+}
+
+.partner {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 300px;
+
+    &__photo {
+        margin-top: 20px;
+        margin: 0 auto;
+        position: relative;
+        width: 120px;
+    }
+    &__ellipse {
+         left: 84px;
+         position: absolute;
+         top: 85px;
+    }
+    &__ellipse-shape {
+        left: 96px;
+        position: absolute;
+        top: 95px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__name {
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    &__description {
+        color: #888;
+        font-family: $roboto-light;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 220px;
+    }
+}
+
+.activities {
+
+}
+
+.activities-img {
+
+}
+
+.activities-search {
+
+
+    &__form {
+
+    }
+    &__question {
+        font-family: $roboto-light;
+        font-size: 18px;
+        margin: 15px 0px;
+        text-align: center;
+    }
+    &__input {
+        border-radius: 4px;
+        border: 1px solid #bbb;
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        width: 278px;
+    }
+    &__button {
+        @include button;
+        background-color: $red-color;
+        color: $main-text-color;
+        display: block;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        width: 280px;
+    }
+}
+
+footer {
+    border-top: 4px solid $red-color;
+    margin-top: 35px;
+}
+
+.footer-logo {
+    color: $red-color;
+    font-family: $montserrat-bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer-menu {
+
+
+    &__title {
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        margin: 10px 0 5px 0;
+        text-align: center;
+    }
+    &__wrapper {
+        height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+    &__item {
+        display: block;
+        float: left;
+        font-family: $roboto-light;
+        font-size: 14px;
+        margin: 0 8px;
+        text-decoration: none;
+
+    }
+    &__link {
+        color: #666;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.designed-by {
+    background: url(../img/designed_by.png) 0px 15px no-repeat;
+    color: #ccc;
+    font-family: $montserrat-regular;
+    font-size: 10px;
+    height: 75px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 110px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    h2 {
+        width: 650px;
+    }
+
+    .header-wrapper {
+        width: 768px;
+    }
+
+    .header-head {
+        height: 230px;
+        width: 768px;
+    }
+
+    .authorization {
+        float: right;
+        width: 150px;
+
+        &__button-log-in {
+            float: left;
+            margin: 65px 0 0 0;
+        }
+        &__button-sing-up {
+            float: right;
+            margin: 58px 0 0 0;
+        }
+    }
+
+    .logo {
+        float: left;
+        margin: 50px 0 0 50px;
+        &__link {
+
+        }
+    }
+
+    .promo {
+        width: 490px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+        &__slogan {
+            margin: 0 0 30px 0;
+            font-size: 52px;
+        }
+        &__second {
+            font-size: 24px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        &__button {
+            margin: 40px auto;
+        }
+    }
+
+    .guide {
+        padding-top: 70px;
+
+        &__step {
+            float: left;
+            height: 400px;
+            margin: 20px 10px;
+            width: 236px;
+        }
+        &__step--step2 {
+
+        }
+        &__step--step3 {
+
+        }
+        &__button {
+            top: 212px;
+        }
+        &__button--step2 {
+            top: 252px;
+        }
+        &__title {
+            top: 226px;
+        }
+        &__title--step2 {
+            top: 265px;
+        }
+        &__text {
+            line-height: 1.2;
+            top: 305px;
+            width: 205px;
+        }
+        &__text--2 {
+            top: 320px;
+        }
+    }
+
+    .guide-wrapper {
+        margin: 0 auto;
+        width: 768px;
+    }
+
+    .partners {
+        margin-top: 60px;
+
+        &__button {
+            height: 40px;
+            width: 190px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 90px;
+        }
+        button {
+            width: 190px;
+            margin: 0;
+        }
+    }
+
+    .partners-wrapper {
+        width: 500px;
+        margin: 0 auto;
+     }
+
+    .partner {
+        width: 250px;
+        float: left;
+        margin: 20px 0px 20px 0px;
+
+        &__photo {
+
+        }
+        &__ellipse {
+
+        }
+        &__ellipse-shape {
+
+        }
+        &__text {
+
+        }
+        &__name {
+
+        }
+        &__description {
+
+        }
+    }
+
+    .activities {
+
+    }
+
+    .activities-img {
+        margin-bottom: 300px;
+    }
+
+    .activities-search {
+        width: 650px;
+        margin: 0 auto;
+
+        &__form {
+
+        }
+        &__question {
+
+        }
+        &__input {
+            height: 38px;
+            float: left;
+            width: 238px;
+            margin: 15px 10px 30px 122px;
+        }
+        &__button {
+            width: 158px;
+            margin: 28px 0 100px 0;
+        }
+    }
+
+    footer {
+
+    }
+
+    .footer-wrapper {
+        width: 768px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        margin: 38px;
+        width: 146px;
+        float: left;
+    }
+
+    .footer-menu {
+        float: left;
+        width: 164px;
+
+        &__title {
+            margin: 40px 0 13px 0;
+        }
+        &__wrapper {
+
+        }
+        &__item {
+            float: none;
+            text-align: left;
+            margin: 5px 8px;
+        }
+        &__link {
+
+        }
+    }
+
+    .designed-by {
+        float: right;
+        margin: 40px 0;
+    }
+}
+
+@media screen and (min-width:960px) {
+    h2 {
+    }
+
+    .header-wrapper {
+        width: 940px;
+    }
+
+    .header-head {
+        width: 940px;
+    }
+
+    .authorization {
+
+        &__button-log-in {
+        }
+        &__button-sing-up {
+        }
+    }
+
+    .logo {
+        margin-left: 20px;
+        &__link {
+
+        }
+    }
+
+    .promo {
+
+        &__slogan {
+        }
+        &__second {
+        }
+        &__button {
+        }
+    }
+
+    .guide {
+
+        &__step {
+            width: 300px;
+            margin: 20px 20px 10px 0;
+        }
+        &__step--step2 {
+        }
+        &__step--step3 {
+            margin: 20px 0 10px 0;
+        }
+        &__button {
+            top: 230px;
+        }
+        &__button--step2 {
+            top: 250px;
+        }
+        &__title {
+            top: 236px;
+        }
+        &__title--step2 {
+            top: 262px;
+        }
+        &__text {
+            top: 315px;
+            width: 260px;
+        }
+        &__text--2 {
+        }
+    }
+
+    .guide-wrapper {
+        margin: 0 auto;
+        width: 940px;
+    }
+
+    .partners {
+
+        &__button {
+        }
+        button {
+        }
+    }
+
+    .partners-wrapper {
+        width: 940px;
+    }
+
+    .partner {
+        width: 235px;
+
+        &__photo {
+        }
+        &__ellipse {
+        }
+        &__ellipse-shape {
+        }
+        &__text {
+        }
+        &__name {
+        }
+        &__description {
+        }
+    }
+
+    .activities {
+
+    }
+
+    .activities-img {
+    }
+
+    .activities-search {
+
+        &__form {
+        }
+        &__question {
+        }
+        &__input {
+        }
+        &__button {
+        }
+    }
+
+    footer {
+
+    }
+
+    .footer-wrapper {
+        width: 940px;
+    }
+
+    .footer-logo {
+    }
+
+    .footer-menu {
+
+        &__title {
+        }
+        &__wrapper {
+        }
+        &__item {
+        }
+        &__link {
+        }
+    }
+
+    .designed-by {
+    }
+}
