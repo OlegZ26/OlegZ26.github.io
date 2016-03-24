@@ -34,29 +34,6 @@
             </div>
         </header>
 
-        <!-- <section class="guide clearfix">
-            <h2 class="">How Urlaubsglück works?</h2>
-            <div class="guide-wrapper">
-                <div class="guide__step">
-                    <a class="guide__button" href="#"> STEP 1</a>
-                    <p class="guide__title">Sed leo enim, condimentum</p>
-                    <p class="guide__text">Quisque libero libero, dictum non turpis in, luctus semper lorem.
-                    Donec rhoncus a leo sit amet facilisis.</p>
-                </div>
-                <div class="guide__step guide__step--step2">
-                    <a class="guide__button guide__button--step2" href="#"> STEP 2</a>
-                    <p class="guide__title guide__title--step2">Morbi velit risus</p>
-                    <p class="guide__text guide__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus,
-                    sit amet porttitor est.</p>
-                </div>
-                <div class="guide__step guide__step--step3">
-                    <a class="guide__button" href="#"> STEP 3</a>
-                    <p class="guide__title">Sed leo enim, condimentum</p>
-                    <p class="guide__text">Quisque libero libero, dictum non turpis in, luctus semper lorem.
-                    Donec rhoncus a leo sit amet facilisis.</p>
-                </div>
-            </div>
-        </section> -->
         
         <section class="guide clearfix">
             <h2 class="">How Urlaubsglück works?</h2>
@@ -158,7 +135,7 @@
         
         <section class="partners">
             <h2 class="">Meet a partner for your best holiday</h2>
-            <div class="partners-wrapper  clearfix">
+            <div class="partners-wrapper clearfix">
                 <div class="partner">
                     <div class="partner__photo">
                         <img class="" src="img/partner_1.png">
@@ -185,7 +162,7 @@
                     <div class="partner__photo">
                         <img class="" src="img/partner_3.png">
                         <img class="partner__ellipse" src="img/ellipse_3.png">
-                        <img class="partner__ellipse-shape" src="img/ellipse_shape_3.png" >
+                        <img class="partner__ellipse-shape partner__ellipse-shape--3" src="img/ellipse_shape_3.png">
                     </div>
                     <div class="partner__text">
                         <p class="partner__name">Lucas Marsha</p>
@@ -197,7 +174,7 @@
                     <div class="partner__photo">
                         <img class="" src="img/partner_4.png">
                         <img class="partner__ellipse" src="img/ellipse_4.png">
-                        <img class="partner__ellipse-shape" src="img/ellipse_shape_4.png" >
+                        <img class="partner__ellipse-shape partner__ellipse-shape--4" src="img/ellipse_shape_4.png">
                     </div>
                     <div class="partner__text">
                         <p class="partner__name">Bradley Hunter</p>
@@ -210,11 +187,13 @@
            </div>
         </section>
         
-        <section class="activities">
+        <section class="discover">
             <h2 class="">Discover holiday activity ideas</h2>
-            <div class="activities-img">
-        
+            <div class="discover-wrapper">
             </div>
+        </section>
+        
+        <section class="activities">
             <div class="activities-search">
                 <h2 class="">Discover holiday activity ideas</h2>
                 <form class="activities-search__form" action="" method="" >
@@ -224,6 +203,19 @@
                 </form>
             </div>
         </section>
+        
+        <script type="text/template" id="ideas-template">
+            <div class="grid">
+            <% for (var i = 0; i<data.length; i++) { %>
+                <div class="tile tile--ideas
+                <% if (( i === 5 ) || ( i === 4 )){ %>
+                    tile--ideas-width2
+                    <% } %>" style = "background: url(<%= data[i].imageurl %>); background-size: cover">
+                    <a href="#"><h3 class="tile__heading tile__heading--ideas"><%= data[i].word %></h3></a>
+                </div>
+            <% }; %>
+            </div>
+        </script>
 
         <footer>
             <div class="footer-wrapper clearfix">
@@ -255,6 +247,7 @@
         </footer>
     </div>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

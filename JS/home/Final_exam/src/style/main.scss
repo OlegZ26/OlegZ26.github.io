@@ -243,6 +243,14 @@ h2 {
         position: absolute;
         top: 95px;
     }
+    &__ellipse-shape--3 {
+        left: 97px;
+        top: 96px;
+    }
+    &__ellipse-shape--4 {
+        left: 94px;
+        top: 97px;
+    }
     &__text {
         text-align: center;
     }
@@ -260,20 +268,56 @@ h2 {
     }
 }
 
-.activities {
-
+.discover {
+    margin-top: 35px;
 }
 
-.activities-img {
+.discover-wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 320px;
+}
 
+.grid {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.tile {
+    border-radius: 4px;
+    display: table;
+    height: 240px;
+    margin: 0 auto;
+    width: 300px;
+
+    a {
+        text-decoration: none;
+    }
+    &--ideas {
+        border: 1px solid #ccc;
+        height: 120px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+    &__heading {
+        font-family: $montserrat-bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 13px;
+    }
+    &__heading--ideas {
+        color: $main-text-color;
+        line-height: 120px;
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+        width: 290px;
+    }
 }
 
 .activities-search {
 
-
-    &__form {
-
-    }
     &__question {
         font-family: $roboto-light;
         font-size: 18px;
@@ -318,7 +362,6 @@ footer {
 
 .footer-menu {
 
-
     &__title {
         font-family: $montserrat-bold;
         font-size: 14px;
@@ -338,7 +381,6 @@ footer {
         font-size: 14px;
         margin: 0 8px;
         text-decoration: none;
-
     }
     &__link {
         color: #666;
@@ -459,6 +501,7 @@ footer {
         left: 12px;
         height: 55px;
         width: 55px;
+
         &:hover {
             border-radius: 27px;
         }
@@ -469,6 +512,7 @@ footer {
         left: 189px;
         height: 55px;
         width: 55px;
+
         &:hover {
             border-radius: 27px;
         }
@@ -501,8 +545,35 @@ footer {
         margin: 20px 0px 20px 0px;
     }
 
-    .activities-img {
-        margin-bottom: 300px;
+    .discover {
+        margin-top: 97px;
+        margin-bottom: 70px;
+    }
+
+    .discover-wrapper {
+        margin-top: 30px;
+        width: 768px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .tile {
+        height: 400px;
+
+        &--ideas {
+            width: 236px;
+            height: 307px;
+            margin: 0 0 20px 0;
+        }
+        &--ideas-width2 {
+            width: 492px;
+        }
+        &__heading--ideas {
+            line-height: 307px;
+            width: 100%;
+        }
     }
 
     .activities-search {
@@ -642,6 +713,24 @@ footer {
 
     .partner {
         width: 235px;
+    }
+
+    .discover-wrapper {
+        width: 960px;
+    }
+
+    .tile {
+        &--ideas {
+        width: 300px;
+        }
+
+        &--ideas-width2 {
+            width: 620px;
+        }
+
+        &--ideas:nth-child(2n+3) {
+            margin-right: 0;
+        }
     }
 
     .footer-wrapper {
