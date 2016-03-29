@@ -26,7 +26,8 @@ h2 {
 }
 
 .authorization {
-    margin-bottom: 112px;
+    margin-bottom: 106px;
+    padding-top: 7px;
 
     &__button-log-in {
         color: $main-text-color;
@@ -42,9 +43,9 @@ h2 {
         border-radius: 20px;
         border: 2px solid #fff;
         float: right;
-        height: 30px;
-        line-height: 30px;
-        margin: 21px 86px 0 0;
+        height: 34px;
+        line-height: 32px;
+        margin: 19px 88px 0 0;
         text-align: center;
         width: 85px;
     }
@@ -68,7 +69,7 @@ h2 {
         color: $main-text-color;
         font-family: $montserrat-bold;
         font-size: 30px;
-        margin: 10px 0;
+        margin: 25px 0 7px 0;
         text-align: center;
         text-transform: uppercase;
     }
@@ -85,7 +86,7 @@ h2 {
         background-color: $red-color;
         color: $main-text-color;
         display: block;
-        margin: 16px auto;
+        margin: 14px auto;
         text-align: center;
         text-decoration: none;
         width: 280px;
@@ -147,7 +148,7 @@ h2 {
         font-size: 14px;
         left: 20px;
         position: absolute;
-        top: 155px;
+        top: 157px;
         width: 260px;
     }
 }
@@ -159,7 +160,7 @@ h2 {
 }
 
 .jcarousel {
-    margin: 0 auto;
+    margin: -25px auto;
     width: 300px;
     position: relative;
     overflow: hidden;
@@ -202,8 +203,8 @@ h2 {
 }
 
 .partners {
-    margin-bottom: 36px;
-    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-top: 40px;
 
     &__button {
         margin-top: 20px;
@@ -215,8 +216,7 @@ h2 {
         border: 2px solid $red-color;
         background-color: #fff;
         color: $red-color;
-        letter-spacing: 1px;
-        margin: 16px auto;
+        margin: 0 auto;
         text-align: center;
         width: 280px;
     }
@@ -224,7 +224,7 @@ h2 {
 
 .partner {
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     width: 300px;
 
     &__photo {
@@ -269,7 +269,7 @@ h2 {
 }
 
 .discover {
-    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 .discover-wrapper {
@@ -321,7 +321,7 @@ h2 {
     &__question {
         font-family: $roboto-light;
         font-size: 18px;
-        margin: 15px 0px;
+        margin: 10px 0 14px 0;
         text-align: center;
     }
     &__input {
@@ -332,7 +332,7 @@ h2 {
         line-height: 30px;
         margin: 0 auto;
         margin-bottom: 10px;
-        padding-left: 15px;
+        padding-left: 13px;
         width: 278px;
     }
     &__button {
@@ -340,7 +340,6 @@ h2 {
         background-color: $red-color;
         color: $main-text-color;
         display: block;
-        letter-spacing: 1px;
         margin: 0 auto;
         width: 280px;
     }
@@ -348,7 +347,7 @@ h2 {
 
 footer {
     border-top: 4px solid $red-color;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .footer-logo {
@@ -356,7 +355,7 @@ footer {
     font-family: $montserrat-bold;
     font-size: 16px;
     letter-spacing: 1px;
-    margin-top: 15px;
+    margin: 15px 0 13px 0;
     text-align: center;
 }
 
@@ -369,7 +368,7 @@ footer {
         text-align: center;
     }
     &__wrapper {
-        height: 20px;
+        height: 18px;
         margin: 0 auto;
         text-align: center;
         width: 300px;
@@ -379,6 +378,7 @@ footer {
         float: left;
         font-family: $roboto-light;
         font-size: 14px;
+        line-height: 12px;
         margin: 0 8px;
         text-decoration: none;
     }
@@ -397,7 +397,7 @@ footer {
     height: 75px;
     letter-spacing: 1px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 16px;
     text-align: center;
     width: 110px;
 }
