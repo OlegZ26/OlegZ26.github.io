@@ -649,15 +649,19 @@ footer {
 @media screen and (min-width:960px) {
 
     .header-wrapper {
-        width: 940px;
+        width: 960px;
     }
 
     .header-head {
-        width: 940px;
+        width: 960px;
     }
 
     .logo {
-        margin-left: 20px;
+        margin-left: 11px;
+    }
+
+    .authorization {
+        margin-right: 11px;
     }
 
     .guide {
@@ -692,8 +696,9 @@ footer {
     }
 
     .wrap-jcarousel {
-        width: 940px;
-        margin: 10px auto;
+        width: 960px;
+        padding: 0 10px;
+        margin: -10px auto;
     }
 
     .jcarousel {
@@ -707,8 +712,8 @@ footer {
     }
 
     .jcarousel-prev {
-        top: 185px;
-        left: 5px;
+        top: 189px;
+        left: 8px;
         height: 55px;
         width: 55px;
 
@@ -718,8 +723,8 @@ footer {
     }
 
     .jcarousel-next {
-        top: 185px;
-        left: 240px;
+        top: 189px;
+        left: 237px;
         height: 55px;
         width: 55px;
 
