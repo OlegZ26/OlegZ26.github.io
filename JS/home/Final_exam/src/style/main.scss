@@ -47,7 +47,7 @@ h2 {
         line-height: 32px;
         margin: 19px 88px 0 0;
         text-align: center;
-        width: 85px;
+        width: 88px;
     }
 }
 
@@ -58,7 +58,7 @@ h2 {
         color: $main-text-color;
         font-family: $montserrat-bold;
         font-size: 20px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.8px;
         text-decoration: none;
     }
 }
@@ -419,36 +419,38 @@ footer {
     }
 
     .header-head {
-        height: 230px;
+        height: 216 px;
         width: 768px;
     }
 
     .authorization {
         float: right;
         width: 150px;
+        padding: 0;
+        margin-right: 52px;
 
         &__button-log-in {
             float: left;
-            margin: 65px 0 0 0;
+            margin: 48px 0 0 0;
         }
         &__button-sing-up {
             float: right;
-            margin: 58px 0 0 0;
+            margin: 39px 0 0 0;
         }
     }
 
     .logo {
         float: left;
-        margin: 50px 0 0 50px;
+        margin: 36px 0 0 50px;
     }
 
     .promo {
         width: 490px;
         margin: 0 auto;
-        margin-bottom: 80px;
+        margin-bottom: 111px;
 
         &__slogan {
-            margin: 0 0 30px 0;
+            margin: 0 0 20px 0;
             font-size: 52px;
         }
         &__second {
@@ -458,11 +460,12 @@ footer {
         }
         &__button {
             margin: 40px auto;
+            width: 225px;
         }
     }
 
     .guide {
-        padding-top: 70px;
+        padding-top: 94px;
 
         &__step {
             float: left;
@@ -493,6 +496,7 @@ footer {
     }
 
     .wrap-jcarousel {
+        margin: 23px auto;
         width: 768px;
     }
 
@@ -502,8 +506,8 @@ footer {
     }
 
     .jcarousel-prev {
-        top: 65px;
-        left: 12px;
+        top: 76px;
+        left: 16px;
         height: 55px;
         width: 55px;
 
@@ -513,8 +517,8 @@ footer {
     }
 
     .jcarousel-next {
-        top: 65px;
-        left: 189px;
+        top: 76px;
+        left: 184px;
         height: 55px;
         width: 55px;
 
@@ -524,14 +528,14 @@ footer {
     }
 
     .partners {
-        margin-top: 60px;
+        margin-top: 91px;
 
         &__button {
             height: 40px;
             width: 190px;
-            margin: 0 auto;
-            margin-top: 30px;
-            margin-bottom: 90px;
+            margin: 0px auto 90px;
+            // margin-top: 30px;
+            // margin-bottom: 90px;
         }
         button {
             width: 190px;
@@ -547,12 +551,16 @@ footer {
     .partner {
         width: 250px;
         float: left;
-        margin: 20px 0px 20px 0px;
+        margin: 22px 0px 30px 0px;
+
+        &__name {
+            line-height: 12px;
+        }
     }
 
     .discover {
         margin-top: 97px;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
 
     .discover-wrapper {
@@ -585,15 +593,20 @@ footer {
         width: 650px;
         margin: 0 auto;
 
+        &__question {
+            margin-top: 29px;
+            margin-bottom: 23px;
+        }
+
         &__input {
             height: 38px;
             float: left;
             width: 238px;
-            margin: 15px 10px 30px 122px;
+            margin: 15px 10px 30px 120px;
         }
         &__button {
-            width: 158px;
-            margin: 28px 0 100px 0;
+            width: 160px;
+            margin: 37px 0 100px 0;
         }
     }
 
@@ -611,22 +624,24 @@ footer {
 
     .footer-menu {
         float: left;
-        width: 164px;
+        margin-left: 7px;
+        margin-right: 12px;
+        width: 147px;
 
         &__title {
-            margin: 40px 0 13px 0;
+            margin: 37px 0 15px 0;
         }
         &__item {
             float: none;
             text-align: left;
-            margin: 5px 8px;
+            margin: 12px 0;
         }
 
     }
 
     .designed-by {
         float: right;
-        margin: 40px 0;
+        margin: 40px 42px;
     }
 }
 
