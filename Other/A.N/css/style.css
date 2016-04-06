@@ -1050,7 +1050,7 @@ footer{
 /*------------------------ 10 Blog Posts Page ------------------------*/
 
 .cover{
-	background: url(../images/home.jpg) no-repeat top;
+	background: #eceef1;
 	height:560px;
 	position:relative;
 }
