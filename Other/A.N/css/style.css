@@ -808,12 +808,22 @@ ul.skill-list h3 {
     width: 55px;
     text-align: center;
     padding: 20px 0;
+    float: left;
     font-size: 15px;
     color: #fff;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 	background: #cf000f;
+}
+
+.resume-education__title {
+    color: #cf000f;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-left: 20px;
 }
 
 .resume-out {
