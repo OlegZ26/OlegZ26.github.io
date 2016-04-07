@@ -46,7 +46,7 @@
 <!-- Header -->
 <header>
 	<div class="container">
-    	<div class="logo"><img src="images/logo.png" alt=""></div>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
         <a href="#" class="hamburger-menu">
             <span></span>
             <span></span>
@@ -90,10 +90,12 @@
     	<div class="col-md-12">
         	<div class="home-inner">
                 <div class="home-content" id="about-link">
+                <div class="author-foto"></div>
                     <h1 class="home-title">Привет, Я <span>Андрей Никитин</span> </h1>
                     <h2 class="home-subtitle">Специалист по интернет-маркетингу</h2>
                     <a class="home-down bounce" href="#about"><i class="fa fa-angle-down"></i></a>
                 </div>
+                <!-- <div class="author-foto"></div> -->
             </div>
         </div>
     </div>
@@ -114,7 +116,7 @@
                         <li><span>Email :</span> an@adbeam.agency</li>
                         <li><span>Местонахождения :</span> Москва, м.Киевская</li>
                     </ul>
-                    <button class="site-btn top_30">БЕСПЛАТНЫЙ АУДИТ</button>
+                    <a class="site-btn top_30 bounce2" href="#audit-contact-form">БЕСПЛАТНЫЙ АУДИТ</a>
                 </div>
                 <!-- Story -->
                 <div class="col-md-5 about-text">
@@ -542,7 +544,7 @@
                         <li>Если у вас уже есть рекламная кампания и она не приносит вам ожидаемых результатов
                         или вы получаете клики и у вас высокий CTR, но нет заказов - закажите бесплатный аудит и консультацию!</li>
                         <li><i class="fa fa-phone"></i>+7(967) 214-62-47 </li>
-                        <li><i class="fa fa-envelope-o"></i>an@adbeam.agency/li>
+                        <li><i class="fa fa-envelope-o"></i>an@adbeam.agency </li>
                         <li><i class="fa fa-map-marker"></i>Москва, м.Киевская</li>
                     </ul>
                     <div class="social-contact">
@@ -554,7 +556,7 @@
                     </div>
                 </div> <!-- .row end -->
             </div> <!-- .col-md-6 .contact-informations end -->
-            <form class="col-md-6 contact-form" method="POST" action="mail.php">
+            <form class="col-md-6 contact-form" method="POST" action="mail.php" id="audit-contact-form">
                 <div class="row">
                     <h5 class="contact-titles bottom_30">ОСТАВЛЯЙТЕ ЗАЯВКУ</h5>
                     <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Имя">
