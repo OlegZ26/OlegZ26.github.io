@@ -621,7 +621,6 @@ ul.skill-list h3 {
     color: #949494;
 }
 
-
 .services .service .ser-text {
     padding-top: 6px;
     display: inline-block;
@@ -1106,7 +1105,7 @@ footer{
 }
 
 .footer{
-	padding:50px 0;
+	padding:15px 0;
 }
 
 .footer .copyright{
@@ -1520,6 +1519,10 @@ blockquote.emphasis p{
 	.testi-image {
 		display:none;
 	}
+
+    .contact-titles{
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width:1119px) {
