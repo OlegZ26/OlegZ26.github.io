@@ -199,7 +199,7 @@ header{
 	position:fixed;
 	z-index:100;
 	width: 100%;
-	padding:30px 0;
+	padding:15px 0;
 	background: black;
 }
 
@@ -207,8 +207,27 @@ header{
 	display: inline-block;
 }
 
+.main-nav {
+
+}
+
+.main-nav__item {
+    float: left;
+    padding-left: 20px;
+}
+
+.main-nav__link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.main-nav__link:hover {
+    color: #cf000f;
+}
+
 .hamburger-menu {
-    display: inline-block;
+    display: none;
     float: right;
     height: 30px;
     position: relative;
@@ -1093,7 +1112,7 @@ footer{
 
 .cover{
 	background: url(../images/bg5.jpg) repeat top;
-	height:560px;
+	height:270px;
 	position:relative;
 }
 
@@ -1368,7 +1387,6 @@ blockquote.emphasis p{
 /*Max Width 479px */
 
 @media screen and (max-width:479px) {
-
 	.home-title{
 		font-size:35px;
 	}
@@ -1473,7 +1491,21 @@ blockquote.emphasis p{
 
 }
 
+@media screen and (max-width: 550px) {
+    .main-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 991px) {
+
+    .hamburger-menu {
+        display: inline-block;
+    }
 
 	.testi-image {
 		display:none;
