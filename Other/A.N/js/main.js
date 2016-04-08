@@ -65,7 +65,7 @@
         });
 
         var infowindow = new google.maps.InfoWindow({
-                content: "<b>ЖИРНЫЙ</b><br/>+7(967) 214-62-47<br/> Москва<br/> м. Киевская"  //add address
+                content: "<b>Андрей Никитин</b> <br/>+7(967) 214-62-47 <br/>an@adbeam.agency <br/>Москва, м. Киевская"  //add address
         });
 
         google.maps.event.addListener(marker, "click", function () {
