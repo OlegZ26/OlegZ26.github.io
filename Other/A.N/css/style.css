@@ -598,7 +598,7 @@ ul.skill-list h3 {
 	border-top:solid 1px #ededed;
 	margin-top:60px;
 	padding-top: 45px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .services .service i {
@@ -612,7 +612,7 @@ ul.skill-list h3 {
     float: left;
     color: #fff;
     font-size: 21px;
-    margin-right: 10px;
+    margin: 9px 10px 60px 0;
 	background: #b6bbc7;
 }
 
@@ -808,7 +808,6 @@ ul.skill-list h3 {
     text-align: center;
     padding: 20px 0;
     float: left;
-    font-size: 15px;
     color: #fff;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -1409,7 +1408,7 @@ blockquote.emphasis p{
 	}
 
 	.cover {
-		height: 460px;
+		height: 260px;
 	}
 
 	.service {
