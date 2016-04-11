@@ -359,6 +359,26 @@ header{
 	font-weight:300;
 }
 
+.home-mission {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 30px 0 7px 0;
+}
+
+.home-mission span {
+    color: #cf000f;
+    font-weight: 600;
+}
+
+.home-options {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.home-options:first-letter {
+    color: #cf000f;
+}
+
 .home-down{
 	color: #fff;
     font-size: 40px;
