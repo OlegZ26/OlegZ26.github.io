@@ -1,0 +1,240 @@
+﻿	body {
+		background: url(../img/background.png) repeat-y;
+		height: 1060px;
+	}
+
+	.google-head {
+		height: 38px;
+	}
+
+	.container {
+		background-color: #fff;
+		box-shadow: 0 8px 10px 2px rgba(0,0,0,0.69);
+		height: 991px;
+		margin: 0 auto;
+		width: 999px;
+	}
+
+	/*** HEADER ***/
+
+	.header {
+		height: 444px;
+	}
+
+	.logo {
+		float: left;
+		height: 175px;
+	}
+
+	.contacts {
+		float: right;
+		margin-top: 13px;
+		margin-right: 36px;
+	}
+
+	.contacts-top li {
+		color: #41a1b9;
+		font-size: 12px;
+		font-family: Tahoma;
+		margin-bottom: 5px;
+		opacity: .8;
+	}
+
+	.contacts-top .top-li-contacts-top {
+		font-weight: bold;
+		opacity: .8;
+	}
+
+	.countries {
+		clear: right;
+		float: right;
+	}
+
+	ul.nav-countries {
+		margin: 30px;
+	}
+
+	.nav-countries li {
+		float: left; /* выстраивает элементы списка в один ряд */
+	}
+
+	.nav-countries li a {
+		background-position: center top; /* выравнивает фон вверх и по центру */
+		background-repeat: no-repeat;
+		color: #128aa7;
+		display: block;
+		font-size: 10px;
+		font-family: Tahoma;
+		height: 20px;
+		padding-top: 44px; /* внутренний оступ чтобы текст был вне фона */
+		text-align: center;		
+		width: 58px; /* размеры указывает чтобы картинки полностью отобразились */	
+	}
+
+	.nav-countries .i-flag a {
+		background-image: url(../img/i_flag.png);
+	}
+
+	.nav-countries .n-flag a {
+		background-image: url(../img/n_flag.png);
+	}
+
+	.nav-countries .t-flag a {
+		background-image: url(../img/t_flag.png);
+	}
+
+	.nav-countries .b-flag a {
+		background-image: url(../img/b_flag.png);
+	}
+
+	.nav-countries .s-flag a {
+		background-image: url(../img/s_flag.png);
+	}
+
+	.nav-countries .m-flag a {
+		background-image: url(../img/m_flag.png);
+	}
+
+	.photo {
+		clear: both;
+		height: 238px;
+	}
+
+	.clearfix:after{
+ 		content: '';
+ 		clear: both;
+  		display: block;
+  		height: 0;
+ 		width: 100%;
+	}
+
+	.menu{
+		border-bottom: 1px solid #000;
+		background: rgb(55,55,55); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
+ 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+        padding-left: 37px;
+	}
+	
+	.menu li{
+  		float: left;
+  		list-style: none;
+  		position: relative;
+	}
+
+	.menu li a{
+  		color: #fff;
+  		display: block;
+  		font-size: 14px;
+		line-height: 28px;
+  		position: relative;
+  		padding: 0 33px;
+  		text-decoration: none;
+	}
+
+	.menu ul+a:after{
+  		background: url(../img/triangle.png) 0 0 no-repeat;
+  		content: '';
+  		display: block;
+		height: 6px;
+		margin-top: -2px;
+  		position: absolute;
+  		top: 50%;
+  		right: 10px;
+  		width: 5px;	
+	}
+
+	.menu ul{
+  		left: 23px;
+  		opacity: 0;
+  		position: absolute;
+  		top: 0;
+  		transition: all 0.5s;
+  		visibility: hidden;
+	}
+
+	.menu li:hover ul{
+  		opacity: 1;
+  		top: 100%;
+		visibility: visible;
+	}
+
+	.menu ul li{
+  		background: #303030;
+	}
+
+	.menu ul a{
+ 		 padding: 0 10px;
+	}
+
+	/*** CONTENT ***/
+
+	.content {
+		width: 999px;
+		background: url(../img/fon.png);
+		float: left;
+	}
+
+	.leftColumn {
+		width: 210px;
+		float: left;
+	}
+
+	.centerColumn {
+		width: 579px;
+		float: left;
+	}
+
+	.rightColumn {
+		width: 210px;
+		float: left;
+	}
+
+	h2 {
+		color: #424c43;
+		font-family: Tahoma;
+		font-size: 18px;
+		font-weight: 600;
+		margin: 15px 0 7px 0;
+		text-align: center;
+	}
+
+	.sidebar {
+		margin-bottom: 24px;
+		padding-left: 15px;
+	}
+
+	.sidebar li {
+		font-family: Tahoma;
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	.sidebar a {
+		color: #424c43;
+		text-decoration: none;
+	}
+
+	/*** FOOTER ***/
+
+	.footer {
+		background-color: #0c739f;
+		clear: both;
+		color: #fff;
+		font-size: 12px;
+		font-family: Tahoma;
+		height: 18px;
+		margin: 0 auto;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		opacity: .8;
+		padding-top: 7px;
+		text-align: center;
+		width: 1060px;
+	}

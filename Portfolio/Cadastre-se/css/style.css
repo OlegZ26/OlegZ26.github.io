@@ -1,0 +1,225 @@
+﻿@font-face {
+    font-family: 'Helvetica Neue Cyrthin';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrap {
+	 font-family: "Helvetica Neue Cyrthin";
+}
+
+/* Header */
+
+.header {
+	background-image: url(../img/Background-top.png);
+	height: 36px;
+	margin: 0 auto;
+	width: 1215px;
+}
+
+.header ul {
+	float: left;
+	margin-left: 440px;
+}
+
+.header ul li {
+	float: left;
+}
+
+.header ul li a {
+	color: #60b5ed;
+	display: block;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 16px;
+	text-decoration: none;
+}
+
+.header ul li a:hover {
+	background-color: #4eabda;
+	color: #fff;
+}
+
+.login-box {
+	background-image: url(../img/Layer.png);
+	float: right;
+	height: 36px;
+	margin-right: 20px;
+	width: 191px;
+}
+
+.login-text {
+	color: #fff;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 13px;
+	width: 180px;
+}
+
+.login-text a {
+	color: #fff;
+}
+
+.ofertas {
+	float: right;
+	height: 36px;
+	line-height: 36px;
+	padding-top: 0px;
+	width: 161px;
+}
+
+.ofertas img {
+	padding-top: 2px;
+}
+
+.ofertas span {
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	float: right;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 11px;
+	width: 108px;
+}
+
+/* Content */
+
+.container {
+	background-image: url(../img/background.png);
+	height: 1028px;
+	position: relative;
+	margin: 0 auto;
+	width: 1215px;
+}
+
+.content {
+	height: 614px;
+	left: 50%;
+	margin: 0 auto;
+	margin-top: -307px;
+	margin-left: -280px;
+	position: absolute;
+	top: 50%;
+	width: 560px;
+}
+
+.cadastre {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	font-size: 24px;
+	height: 62px;
+	line-height: 62px;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	text-align: center;
+	width: 560px;
+}
+
+.registration-form {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 549px;
+	margin: 0 auto;
+	width: 560px;
+}
+
+.registration-form button {
+	border: 0;
+	border-radius: 5px;
+	height: 35px;
+	margin: 36px 142px 25px 142px;
+	padding: 0;
+}
+
+.ou {
+	height: 20px;
+	margin: 0px 142px 25px 142px;
+	width: 276px;
+}
+
+.ou	p {
+	background-image: url(../img/Layer2.png);
+	color: #999999;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.form1 {
+	margin: 17px 142px 17px 142px;
+}
+
+.form1 input {
+	background-color: #0f0e0e;
+	border: 0;
+	border-bottom: 1px solid #474747;
+	height: 33px;
+	padding-left: 19px;
+	width: 257px;
+}
+
+.form1 input:hover {
+	background-color: #1b5288;
+	box-shadow: 0px 0px 20px 2px rgba(27,82,136,1);
+	border: none;
+	height: 34px;
+	width: 255px;
+}
+
+.form1 input:focus {
+	background-color: #1b5288;
+	border: none;
+	color: #cccccc;
+	height: 34px;
+	width: 255px;
+}
+
+.form2 {
+	margin: 20px 142px 20px 142px;
+}
+
+.form2 label {
+	color: #cccccc;
+	font-size: 14px;
+}
+
+.form2 input {
+
+}
+
+.form3 {
+	height: 31px;
+	margin: 20px 209px 20px 198px;
+	width: 151px;
+}
+
+.form3 input {
+	background-image: url(../img/Button.png);
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	height: 37px;
+	padding: 0;
+	width: 151px;
+}
+
+.form4 {
+	height: 30px;
+	margin: 10px 124px 10px 124px;
+	width: 301px;
+}
+
+.form4 p {
+	color: #cccccc;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	width: 310px;
+}

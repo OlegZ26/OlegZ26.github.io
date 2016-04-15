@@ -1,0 +1,781 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "partials/mixins";
+
+
+header {
+    background: url(../img/main_header.png) 50% no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+h2 {
+    color: #333;
+    font-family: $montserrat-bold;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 290px;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    padding-bottom: 122px;
+    width: 320px;
+}
+
+.authorization {
+    margin-bottom: 106px;
+    padding-top: 7px;
+
+    &__button-log-in {
+        color: $main-text-color;
+        cursor: pointer;
+        float: left;
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        margin: 28px 0 0 83px;
+        text-decoration: none;
+    }
+    &__button-sing-up {
+        @extend .authorization__button-log-in;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        float: right;
+        height: 34px;
+        line-height: 32px;
+        margin: 19px 88px 0 0;
+        text-align: center;
+        width: 88px;
+    }
+}
+
+.logo {
+    text-align: center;
+
+    &__link {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+    }
+}
+
+.promo {
+
+    &__slogan {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 30px;
+        margin: 25px 0 7px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__second {
+        color: $main-text-color;
+        font-family: $roboto-light;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        width: 220px;
+    }
+    &__button {
+        @include button;
+        background-color: $red-color;
+        color: $main-text-color;
+        display: block;
+        margin: 14px auto;
+        text-align: center;
+        text-decoration: none;
+        width: 280px;
+    }
+}
+
+.guide {
+    padding: 35px 10px 10px 10px;
+
+    &__step {
+        background: url(../img/slider_1.jpg) no-repeat;
+        border-radius: 3px;
+        height: 240px;
+        margin: 10px auto;
+        position: relative;
+        width: 300px;
+    }
+    &__step--step2 {
+        background: url(../img/slider_2.jpg) no-repeat;
+    }
+    &__step--step3 {
+        background: url(../img/slider_3.jpg) no-repeat;
+    }
+    &__button {
+        background-color: $red-color;
+        border-radius: 10px;
+        color: $main-text-color;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 20px;
+        left: 20px;
+        letter-spacing: 2px;
+        line-height: 21px;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        top: 70px;
+        width: 70px;
+    }
+    &__button--step2 {
+        top: 100px;
+    }
+    &__title {
+        color: $main-text-color;
+        font-family: $montserrat-bold;
+        font-size: 24px;
+        font-weight: bold;
+        left: 20px;
+        position: absolute;
+        top: 82px;
+    }
+    &__title--step2 {
+        top: 110px;
+    }
+    &__text {
+        color: $main-text-color;
+        font-family: $roboto-light;
+        font-size: 14px;
+        left: 20px;
+        position: absolute;
+        top: 157px;
+        width: 260px;
+    }
+}
+
+.wrap-jcarousel {
+    width: 320px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.jcarousel {
+    margin: -25px auto;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+
+    ul {
+        width: 20000em;
+        position: relative;
+
+        li {
+            float: left;
+            list-style: none;
+        }
+    }
+}
+
+.jcarousel-prev {
+    position: absolute;
+    background: url(../img/arrow_left.png) center no-repeat;
+    top: 45px;
+    left: 25px;
+    height: 40px;
+    width: 50px;
+    &:hover {
+        background-color: rgba(255,255,255, 0.2);
+        border-radius: 30px;
+    }
+}
+
+.jcarousel-next {
+    position: absolute;
+    background: url(../img/arrow_right.png) center no-repeat;
+    top: 45px;
+    left: 220px;
+    height: 40px;
+    width: 50px;
+    &:hover {
+        background-color: rgba(255,255,255, 0.2);
+        border-radius: 30px;
+    }
+}
+
+.partners {
+    margin-top: 30px;
+    margin-bottom: 34px;
+
+    &__button {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 280px;
+    }
+    button {
+        @include button;
+        border: 2px solid $red-color;
+        background-color: #fff;
+        color: $red-color;
+        margin: 0 auto;
+        text-align: center;
+        width: 280px;
+    }
+}
+
+.partner {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 300px;
+
+    &:last-child {
+        margin-bottom: 23px;
+    }
+
+    &__photo {
+        margin-top: 20px;
+        margin: 0 auto;
+        position: relative;
+        width: 120px;
+    }
+    &__ellipse {
+         left: 84px;
+         position: absolute;
+         top: 85px;
+    }
+    &__ellipse-shape {
+        left: 96px;
+        position: absolute;
+        top: 95px;
+    }
+    &__ellipse-shape--3 {
+        left: 97px;
+        top: 96px;
+    }
+    &__ellipse-shape--4 {
+        left: 94px;
+        top: 97px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__name {
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 16px;
+    }
+    &__description {
+        color: #888;
+        font-family: $roboto-light;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 220px;
+    }
+}
+
+.discover {
+    margin-bottom: 15px;
+}
+
+.discover-wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 320px;
+}
+
+.grid {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.tile {
+    border-radius: 4px;
+    display: table;
+    height: 240px;
+    margin: 0 auto;
+    width: 300px;
+
+    a {
+        text-decoration: none;
+    }
+    &--ideas {
+        border: 1px solid #ccc;
+        height: 120px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+    &__heading {
+        font-family: $montserrat-bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 13px;
+    }
+    &__heading--ideas {
+        color: $main-text-color;
+        line-height: 120px;
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+        width: 290px;
+    }
+}
+
+.activities-search {
+
+    &__question {
+        font-family: $roboto-light;
+        font-size: 18px;
+        margin: 10px 0 14px 0;
+        text-align: center;
+    }
+    &__input {
+        border-radius: 4px;
+        border: 1px solid #bbb;
+        display: block;
+        font-size: 14px;
+        line-height: 34px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-left: 13px;
+        width: 278px;
+    }
+    &__button {
+        @include button;
+        background-color: $red-color;
+        color: $main-text-color;
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+    }
+}
+
+footer {
+    border-top: 4px solid $red-color;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    color: $red-color;
+    font-family: $montserrat-bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 15px 0 13px 0;
+    text-align: center;
+}
+
+.footer-menu {
+
+    &__title {
+        font-family: $montserrat-bold;
+        font-size: 14px;
+        margin: 10px 0 5px 0;
+        text-align: center;
+    }
+    &__wrapper {
+        height: 18px;
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+    &__item {
+        display: block;
+        float: left;
+        font-family: $roboto-light;
+        font-size: 14px;
+        line-height: 12px;
+        margin: 0 8px;
+        text-decoration: none;
+    }
+    &__link {
+        color: #666;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.designed-by {
+    background: url(../img/designed_by.png) 0px 15px no-repeat;
+    color: #ccc;
+    font-family: $montserrat-regular;
+    font-size: 10px;
+    height: 75px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+    width: 110px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    h2 {
+        width: 650px;
+    }
+
+    .header-wrapper {
+        width: 768px;
+    }
+
+    .header-head {
+        height: 216 px;
+        width: 768px;
+    }
+
+    .authorization {
+        float: right;
+        width: 150px;
+        padding: 0;
+        margin-right: 52px;
+
+        &__button-log-in {
+            float: left;
+            margin: 48px 0 0 0;
+        }
+        &__button-sing-up {
+            float: right;
+            margin: 39px 0 0 0;
+        }
+    }
+
+    .logo {
+        float: left;
+        margin: 36px 0 0 50px;
+    }
+
+    .promo {
+        width: 490px;
+        margin: 0 auto;
+        margin-bottom: 111px;
+        margin-top: 37px;
+
+        &__slogan {
+            margin: 0 0 20px 0;
+            font-size: 52px;
+        }
+        &__second {
+            font-size: 24px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        &__button {
+            margin: 32px auto;
+            width: 225px;
+        }
+    }
+
+    .guide {
+        padding-top: 94px;
+
+        &__step {
+            float: left;
+            height: 400px;
+            margin: 20px 10px;
+            width: 236px;
+        }
+        &__button {
+            top: 212px;
+        }
+        &__button--step2 {
+            top: 252px;
+        }
+        &__title {
+            top: 226px;
+        }
+        &__title--step2 {
+            top: 265px;
+        }
+        &__text {
+            line-height: 1.2;
+            top: 305px;
+            width: 205px;
+        }
+        &__text--2 {
+            top: 320px;
+        }
+    }
+
+    .wrap-jcarousel {
+        margin: 23px auto;
+        width: 768px;
+    }
+
+    .jcarousel {
+        width: 256px;
+        float: left;
+    }
+
+    .jcarousel-prev {
+        top: 76px;
+        left: 16px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .jcarousel-next {
+        top: 76px;
+        left: 184px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .partners {
+        margin-top: 91px;
+
+        &__button {
+            height: 40px;
+            width: 190px;
+            margin: 0px auto 90px;
+            // margin-top: 30px;
+            // margin-bottom: 90px;
+        }
+        button {
+            width: 190px;
+            margin: 0;
+        }
+    }
+
+    .partners-wrapper {
+        width: 500px;
+        margin: 0 auto;
+     }
+
+    .partner {
+        width: 250px;
+        float: left;
+        margin: 22px 0px 30px 0px;
+
+        &__name {
+            line-height: 12px;
+        }
+    }
+
+    .discover {
+        margin-top: 97px;
+        margin-bottom: 83px;
+    }
+
+    .discover-wrapper {
+        margin-top: 30px;
+        width: 768px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .tile {
+        height: 400px;
+
+        &--ideas {
+            width: 236px;
+            height: 307px;
+            margin: 0 0 20px 0;
+        }
+        &--ideas-width2 {
+            width: 492px;
+        }
+        &__heading--ideas {
+            line-height: 307px;
+            width: 100%;
+        }
+    }
+
+    .activities-search {
+        width: 650px;
+        margin: 0 auto;
+
+        &__question {
+            margin-top: 29px;
+            margin-bottom: 23px;
+        }
+
+        &__input {
+            height: 38px;
+            float: left;
+            width: 238px;
+            margin: 15px 10px 30px 120px;
+        }
+        &__button {
+            width: 160px;
+            margin: 37px 0 100px 0;
+        }
+    }
+
+    .footer-wrapper {
+        width: 768px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        margin: 38px;
+        width: 146px;
+        float: left;
+    }
+
+    .footer-menu {
+        float: left;
+        margin-left: 7px;
+        margin-right: 12px;
+        width: 147px;
+
+        &__title {
+            margin: 37px 0 15px 0;
+        }
+        &__item {
+            float: none;
+            text-align: left;
+            margin: 12px 0;
+        }
+
+    }
+
+    .designed-by {
+        float: right;
+        margin: 40px 42px;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    .header-wrapper {
+        width: 960px;
+    }
+
+    .header-head {
+        width: 960px;
+    }
+
+    .logo {
+        margin-left: 11px;
+    }
+
+    .authorization {
+        margin-right: 11px;
+    }
+
+    .guide {
+
+        &__step {
+            width: 300px;
+            margin: 20px 20px 10px 0;
+        }
+        &__step--step3 {
+            margin: 20px 0 10px 0;
+        }
+        &__button {
+            top: 230px;
+        }
+        &__button--step2 {
+            top: 250px;
+        }
+        &__title {
+            top: 236px;
+        }
+        &__title--step2 {
+            top: 262px;
+        }
+        &__text {
+            top: 315px;
+            width: 260px;
+        }
+    }
+
+    .guide-wrapper {
+        width: 940px;
+    }
+
+    .wrap-jcarousel {
+        width: 960px;
+        padding: 0 10px;
+        margin: -10px auto;
+    }
+
+    .jcarousel {
+        margin: 0 auto;
+        margin-right: 20px;
+        width: 300px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .jcarousel-prev {
+        top: 189px;
+        left: 8px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .jcarousel-next {
+        top: 189px;
+        left: 237px;
+        height: 55px;
+        width: 55px;
+
+        &:hover {
+            border-radius: 27px;
+        }
+    }
+
+    .partners {
+        margin-top: 75px;
+    }
+
+    .partners-wrapper {
+        width: 960px;
+    }
+
+    .partner {
+        width: 240px;
+    }
+
+    .discover-wrapper {
+        width: 960px;
+    }
+
+    .tile {
+        &--ideas {
+        width: 300px;
+        }
+
+        &--ideas-width2 {
+            width: 620px;
+        }
+
+        &--ideas:nth-child(2n+3) {
+            margin-right: 0;
+        }
+    }
+
+    .footer-wrapper {
+        width: 960px;
+    }
+
+    .footer-logo {
+        margin: 35px 48px 35px 10px;
+    }
+
+    .footer-menu {
+        margin-right: 3px;
+    }
+
+    .designed-by {
+        margin: 41px 9px;
+    }
+}

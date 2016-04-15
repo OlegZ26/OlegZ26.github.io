@@ -1,0 +1,30 @@
+@mixin button {
+    font-family: $montserrat-bold;
+    font-size: 14px;
+    line-height: 36px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+$montserrat-bold: 'MontserratBold', sans-serif;
+$montserrat-regular: 'MontserratRegular', sans-serif;
+$roboto-light: 'RobotoLight', sans-serif;
+$main-text-color: #fff;
+$red-color: #ff4e50;
+
