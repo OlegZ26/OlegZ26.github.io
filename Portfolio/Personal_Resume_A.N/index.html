@@ -484,9 +484,9 @@
             <form class="col-md-6 contact-form" method="POST" action="mail.php" >
                 <div class="row">
                     <h5 class="contact-titles bottom_30">ОСТАВЛЯЙТЕ ЗАЯВКУ С ВАШИМ ВОПРОСОМ</h5>
-                    <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Имя">
-                    <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
-                    <textarea name="con_message" id="con_message" class="requie form-message" placeholder="Задайте ваш вопрос/опишите суть вашего запроса" rows="8"></textarea>
+                    <input class="form-inp requie" id="con_name" name="name" type="text" placeholder="Имя">
+                    <input class="form-inp requie" id="con_email" name="email" type="text" placeholder="Email">
+                    <textarea class="requie form-message" name="web" id="con_message" placeholder="Задайте ваш вопрос/опишите суть вашего запроса" rows="8"></textarea>
                     <input id="con_submit" class="site-btn top_20 bottom_20" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
                 </div>
             </form> <!-- .col-md-6 .contact-form end -->
@@ -504,33 +504,25 @@
     </div>
 </footer>
 
-
-
-
-
-
 <!-- Javascripts -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/vendor.min.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Preloader Js -->
-<script type="text/javascript">
+<script>
 	$(document).ready( function() {
 
 		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
 
 	});
  </script>
-
-
-
 
 </body>
 </html>
