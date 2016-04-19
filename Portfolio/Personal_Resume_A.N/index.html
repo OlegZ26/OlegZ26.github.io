@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Личное резюме и портфолио Андрея Никитина</title>
+    <title>Резюме и портфолио Андрея Никитина</title>
     <meta charset="UTF-8">
     <meta name="description" content="A.N. Personal Resume & Cv">
     <meta name="keywords" content="business, personal, portfolio">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery.arcticmodal.css">
+    <link rel="stylesheet" href="css/jquery.jgrowl.css">
     <link rel="stylesheet" href="css/magnific-popup.css"/>
 
     <!-- Font icons -->
@@ -481,13 +483,13 @@
                     </div>
                 </div> <!-- .row end -->
             </div> <!-- .col-md-6 .contact-informations end -->
-            <form class="col-md-6 contact-form" method="POST" action="handler.php" >
+            <form class="col-md-6 contact-form" method="POST" action="" name="form-2" >
                 <div class="row">
                     <h5 class="contact-titles bottom_30">ОСТАВЛЯЙТЕ ЗАЯВКУ С ВАШИМ ВОПРОСОМ</h5>
-                    <input class="form-inp requie" id="contact_name" name="name" type="text" placeholder="Имя">
-                    <input class="form-inp requie" id="contact_email" name="email" type="text" placeholder="Email">
-                    <textarea class="requie form-message" name="web" id="contact_web" placeholder="Задайте ваш вопрос/опишите суть вашего запроса" rows="8"></textarea>
-                    <button id="con_submit" class="site-btn top_20 bottom_20" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    <input class="form-inp requie name" id="contact_name" name="name" type="text" placeholder="Имя">
+                    <input class="form-inp requie e-mail" id="contact_email" name="e-mail" type="text" placeholder="Email">
+                    <textarea class="requie form-message text" id="contact_web" name="text" placeholder="Задайте ваш вопрос/опишите суть вашего запроса" rows="8"></textarea>
+                    <input class="site-btn top_20 bottom_20 feedback" id="con_submit" name="send" type="button" value="ОТПРАВИТЬ ЗАЯВКУ">
                 </div>
             </form> <!-- .col-md-6 .contact-form end -->
         </div>
@@ -514,6 +516,9 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/main.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/jquery.arcticmodal.js"></script>
+<script src="js/jquery.jgrowl.js"></script>
 
 <!-- Preloader Js -->
 <script>
