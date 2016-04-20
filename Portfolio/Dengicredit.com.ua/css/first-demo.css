@@ -65,6 +65,7 @@ input, textarea, select, button {
 	background: #ffffff;
 	color: #242424;
 	border: 1px solid #e4e4e4;
+	font-size: 16px;
 }
 
 input[type="text"]:focus,
@@ -141,7 +142,7 @@ Intro
 }
 
 ul.intro-features li {
-	background: rgba(0,0,0,0.2);
+	background: rgba(255,255,255,0.8);
 }
 
 .intro-image {
