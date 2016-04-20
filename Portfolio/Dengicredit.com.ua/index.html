@@ -43,9 +43,6 @@
 	Favicons
 	=============================================== -->
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 	<!-- ==============================================
 	JS
@@ -65,7 +62,7 @@
 	</div>
 
 	<section class="section intro">
-		<div class="container">
+		<div class="container container-back">
 			<div class="row">
 				<div class="column-1000 text-center intro-heading-block">
 					<img src="img/logo-2.png" alt="approach" title="Approach Landing Page" class="logo">
@@ -73,19 +70,20 @@
 <!-- 					<h5>*Мы не гарантируем 100% получение кредита, но мы гарантируем лучшие условия на рынке Украины</h5> -->
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="middle-top">
 				<div class="column-60 text-column text-center">
-					<p class="intro-description">Здесь мы так же объясняем какую-то важрую мысль, почему человек должен оформить заявку у нас на <!-- сайте прямо сейчас и не переходить на другой сайт --></p>
+					<p class="intro-description">Срочно нужны деньги на торжество, ремонт, обучение, путешествия, авто или что-то другое?</p>
 					<div class="row">
 						<div class="column-20">
-							<img src="img/product-image-1.png" alt="intro-image" class="intro-image">
+							<img src="img/product-image-2.png" alt="intro-image" class="intro-image">
 						</div>
 						<div class="column-80">
-							<h2>КРЕДИТ от 3 000 до 50 000 грн</h2>
+							<h2>Кредит от 3 000 до 50 000 грн</h2>
 							<ul class="intro-features">
-								<li><img src="img/icon-check.png" alt="check icon">Быстро</li>
-								<li><img src="img/icon-check.png" alt="check icon">Надежно</li>
-								<li><img src="img/icon-check.png" alt="check icon">Безопасно</li>
+                                <li><img src="img/icon-check.png" alt="check icon">Отправляйте заявку в любое время</li>
+								<li><img src="img/icon-check.png" alt="check icon">Заявка отправится сразу в 3 банка</li>
+								<li><img src="img/icon-check.png" alt="check icon">Вы выберете лучшее предложение</li>
+                                <!-- <li><img src="img/icon-check.png" alt="check icon">Безопасно</li> -->
 							</ul>
 						</div>
 					</div>
@@ -211,28 +209,24 @@
                             <option value="Australia">45 000 - 50 000</option>
 						</select>
 						<div class="submit-holder">
-							<div class="submit-arrow animate-arrow">Request new a <span>free sample</span> of our product</div>
-							<input type="submit" name="submit" id="submit" value="Request Free Sample">
+							<div class="submit-arrow animate-arrow">Оформляйте заявку <span>бесплатно</span> у нас на сайте</div>
+							<input type="submit" name="submit" id="submit" value="Получить деньги">
 						</div>
-						<p class="disclaimer">We will never share your email address with anyone and won't bombard you with emails. Promise.</p>
+						<p class="disclaimer">Отправляя заявку, вы подтверждаете свое согласие на обработку ваших данных согласно ЗУ «О защите персональных данных».</p>
 					</form>
 				</div>
 				<div class="column-60 clients">
 					<div class="row">
-						<div class="column-40"><p>Who already believe in us</p></div>
-						<div class="column-30"><img src="img/logo-clients-1.png" alt="client-logo" title="Client Logo"></div>
-						<div class="column-30"><img src="img/logo-clients-2.png" alt="client-logo" title="Client Logo"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section separator">
-		<div class="container">
-			<div class="row">
-				<div class="column-1000">
-					<hr>
+                        <div class="column-40"><p>Работаем с банками:</p></div>
+                        <div class="column-30"><img src="img/mikhailovskiy-bank.png" alt="client-logo" title="Client Logo"></div>
+                        <div class="column-30"><img src="img/trast.jpeg" alt="client-logo" title="Client Logo"></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-25"><img src="img/pumb.jpg" alt="client-logo" title="Client Logo"></div>
+                        <div class="column-25"><img src="img/alfa-bank.png" alt="client-logo" title="Client Logo"></div>
+                        <div class="column-25"><img src="img/otp-bank.png" alt="client-logo" title="Client Logo"></div>
+                        <div class="column-25"><img src="img/idea-bank.png" alt="client-logo" title="Client Logo"></div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -242,51 +236,71 @@
 		<div class="container">
 			<div class="row">
 				<div class="column-1000">
-					<h2>The story behind our product</h2>
+					<h2>Тысячи довольных клиентов:</h2>
 					<div class="row content-block">
-						<div class="column-70">
-							<h4>Unspoiled Nature</h4>
-							<p>Curabitur at dolor id est elementum auctor. Nunc placerat, arcu ut iaculis suscipit, ante lorem hendrerit dui, sit amet malesuada sapien risus vitae sapien. Sed sagittis diam consequat leo fringilla feugiat.<br>
-							Ut rutrum cursus quam, ac hendrerit tortor lobortis sed. Mauris sollicitudin tincidunt lectus eget laoreet.</p>
+						<div class="column-80">
+							<h4>Елена, г. Киев:</h4>
+							<p>Получила кредит 15 тысяч гривен на 12 мес. Досрочно погасила через 7 мес. Реализовала свою давнюю мечту, обустроила кухню: купила новый телевизор, холодильник и много разных покупок.</p>
 						</div>
-						<div class="column-30">
-							<img src="img/content-image-1.jpg" alt="content-image">
+						<div class="column-20">
+							<img src="img/content-image-1.png" alt="content-image">
 						</div>
 					</div>
+                    <div class="column-500">
+                        <hr>
+                    </div>
 					<div class="row content-block">
-						<div class="column-70 float-right">
-							<h4>Variety of Fruits</h4>
-							<p>Duis sit amet velit suscipit, mollis neque sit amet, consectetur ipsum. Aenean id tortor tempus, pulvinar turpis a, imperdiet sapien.<br>
-							Suspendisse sagittis nibh elit, ac euismod purus suscipit id. Vivamus diam leo, pellentesque sit amet felis non, eleifend bibendum turpis. </p>
+						<div class="column-80 float-right">
+							<h4>Ира, г. Киев:</h4>
+							<p>Получила кредит 15 тысяч гривен на 12 мес. Досрочно погасила через 7 мес. Реализовала свою давнюю мечту, обустроила кухню: купила новый телевизор, холодильник и много разных покупок.</p>
 						</div>
-						<div class="column-30">
-							<img src="img/content-image-2.jpg" alt="content-image">
+						<div class="column-20">
+							<img src="img/content-image-2.png" alt="content-image">
 						</div>
 					</div>
+                    <div class="column-500">
+                        <hr>
+                    </div>
 					<div class="row content-block">
-						<div class="column-70">
-							<h4>Made with Love</h4>
-							<p>Curabitur at dolor id est elementum auctor. Nunc placerat, arcu ut iaculis suscipit, ante lorem hendrerit dui, sit amet malesuada sapien risus vitae sapien. Sed sagittis diam consequat leo fringilla feugiat.<br>
-							Duis sit amet velit suscipit, mollis neque sit amet, consectetur ipsum. Aenean id tortor tempus, pulvinar turpis a, imperdiet sapien.</p>
+						<div class="column-80">
+							<h4>Иван, г. Киев:</h4>
+							<p>Получила кредит 15 тысяч гривен на 12 мес. Досрочно погасила через 7 мес. Реализовала свою давнюю мечту, обустроила кухню: купила новый телевизор, холодильник и много разных покупок.</p>
 						</div>
-						<div class="column-30">
-							<img src="img/content-image-3.jpg" alt="content-image">
+						<div class="column-20">
+							<img src="img/content-image-3.png" alt="content-image">
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="container">
-			<div class="row">
-				<div class="column-1000">
-					<div class="testimonial-block">
-						<p class="testimonial">«Отримала в кредит 20 тисяч гривень на 12 місяців. Достроково погасила через 7 місяців. Реалізувала свою давню мрію обставила кухню – придбала новий телевізор, холодильник та багато різних більш дрібніх покупок.»</p>
-						<p class="author"><span>Mark Wright</span> - Founder & CEO</p>
-						<img src="img/testimonial-1.jpg" alt="testimonial-image" title="Testimonial Image">
-					</div>
+                    <div class="column-500">
+                        <hr>
+                    </div>
+                    <div class="row content-block last-content-block">
+                        <div class="column-80 float-right">
+                            <h4>Жора, г. Киев:</h4>
+                            <p>Получила кредит 15 тысяч гривен на 12 мес. Досрочно погасила через 7 мес. Реализовала свою давнюю мечту, обустроила кухню: купила новый телевизор, холодильник и много разных покупок.</p>
+                        </div>
+                        <div class="column-20">
+                            <img src="img/content-image-4.png" alt="content-image">
+                        </div>
+                    </div>
+                    <div class="column-500">
+                        <hr>
+                    </div>
+                    <div class="row content-block">
+                        <div class="column-75">
+                            <div class="column-30">
+                                <img class="benefits-icon" src="img/icon-banks.png" alt="banks" title="">
+                                <p class="benefits-text">Одна заявка сразу в несколько банков</p>
+                            </div>
+                            <div class="column-30">
+                                <img class="benefits-icon" src="img/icon-97.png" alt="ccheck" title="">
+                                <p class="benefits-text">Вероятность получить кредит составляет 97%</p>
+                            </div>
+                            <div class="column-30">
+                                <img class="benefits-icon" src="img/icon-approve.png" alt="approve" title="">
+                                <p class="benefits-text">На сегодня 12 775 заявок уже одобрено</p>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -296,11 +310,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="column-60">
-					<h2>Get a free sample today and join the growing community of "Approach" lovers</h2>
-					<a class="button orange cta" href="#top">Request Free Sample</a>
+					<h2>Оформляйте кредиты легко, быстро и по самым выгодным условиям. Заполняйте заявку у нас на сайте!</h2>
+					<a class="button orange cta" href="#middle-top">Оформить кредит</a>
 				</div>
 				<div class="column-40">
-					<img src="img/product-image-2.png" alt="product-image" class="bottom-cta-image">
+					<img src="img/product-image-1.png" alt="product-image" class="bottom-cta-image">
 				</div>
 			</div>
 		</div>
@@ -318,13 +332,13 @@
 
 	<div id="thanks-popup" class="section thanks-popup mfp-hide">
  		<div class="thanks-heading">
- 			<h1>Thank you for trusting us!</h1>
+ 			<h1>Спасибо за доверие!</h1>
  		</div>
  		<div class="thanks-body">
- 			<p>We will contact you shortly!<br>
-			In the meantime you can download our <a href="#">services brochure</a>.</p>
-			<p>Want to know when we have special deals?</p>
-			<a class="button orange" href="#">Visit special deals page</a>
+ 			<p>Наши специалисты уже обрабатывают вашу заявку!<br>
+			И в ближайшее время (рабочее время) с вами свяжутся.</p>
+<!-- 			<p>Хотие получить кредитную карту для удобных расчетов?</p>
+			<a class="button orange" href="#">Оформляйте её здесь</a> -->
  		</div>
 	</div>
 

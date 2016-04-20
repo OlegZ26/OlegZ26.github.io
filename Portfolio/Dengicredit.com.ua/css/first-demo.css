@@ -145,8 +145,8 @@ ul.intro-features li {
 }
 
 .intro-image {
-	top: 0;
-	left: -75px;
+	top: 58px;
+	left: -40px;
 }
 
 p.intro-description {
@@ -252,6 +252,15 @@ Icon Block
 	color: #333333;
 }
 
+.benefits-icon {
+	margin: 0 30px 5px 45px;
+}
+
+.benefits-text {
+	text-align: center;
+	font-size: 17px;
+}
+
 /* ==================================================================
 Pricing Table
 ================================================================== */
@@ -311,5 +320,5 @@ Bottom CTA
 
 .bottom-cta-image {
 	left: 0px;
-	top: -143px;
+	top: -275px;
 }

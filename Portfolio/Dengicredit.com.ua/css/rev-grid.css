@@ -5,6 +5,10 @@
 	padding-right: 15px;
 }
 
+.container-back {
+	background-color: rgba(0,0,0,0.4);
+}
+
 .container:before,
 .container:after {
 	content: " ";
@@ -194,7 +198,7 @@
 /*
 
 @media (min-width: 1200px) {
-	
+
 	.container {
 		max-width: 1170px;
 	}
