@@ -33,7 +33,7 @@ $(function() {
             type: 'GET',
             dataType: 'json',
             cache: false,
-            url: 'http://api.pixplorer.co.uk/image?word=' + search + '&amount=7&size=s',
+            url: 'http://api.pixplorer.co.uk/image?word=' + search + '&amount=7&size=tb',
             success: function (data) {
                 if (data.status === 'failed') {
                     data = mockData;
