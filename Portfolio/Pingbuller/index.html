@@ -48,12 +48,10 @@
         </div> <!-- end part-of-wrapper clearfix -->
       </header>
       <div class="slider">
-        <div class="part-of-wrapper clearfix">
-          <div class="slider-wrapper">
-            <div class="slider-directions_left"></div>
-            <div class="slider-directions_right"></div>
-            <div class="slider-holder clearfix">
-              <div class="slider-holder-slide clearfix">
+        <div class="wrap-jcarousel">
+          <div class="jcarousel">
+            <ul>
+              <li>
                 <div class="slider-description">
                   <h1 class="slider-description__title">Lorem Ipsum Dolor</h1>
                   <h2 class="slider-description__subtitle">It will make all of your dreams come true</h2>
@@ -61,23 +59,45 @@
                   Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat.
                   Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus.
                   Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                  <figure class="slider-image clearfix">
+                    <img src="img/slider_iphone.png" alt=""/>
+                    <div class="slider-image__action"></div>
+                  </figure>
                 </div>
-                <figure class="slider-image clearfix">
-                  <img src="img/slider_iphone.png" alt=""/>
-                  <div class="slider-image__action"></div>
-                </figure>
-              </div> <!-- end slider-holder-slide clearfix -->
-            </div> <!-- end slider-holder clearfix -->
-          </div> <!-- end slider-wrapper -->
-          <div class="dots">
-            <ul class="dots-nav clearfix">
-              <li class="dots-nav__item"></li>
-              <li class="dots-nav__item active"></li>
-              <li class="dots-nav__item"></li>
-              <li class="dots-nav__item"></li>
+              </li>
+              <li>
+                <div class="slider-description">
+                  <h1 class="slider-description__title">Lorem Ipsum Dolor</h1>
+                  <h2 class="slider-description__subtitle">It will make all of your dreams come true</h2>
+                  <p class="slider-description__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien.
+                  Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat.
+                  Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus.
+                  Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                  <figure class="slider-image clearfix">
+                    <img src="img/slider_iphone.png" alt=""/>
+                    <div class="slider-image__action"></div>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="slider-description">
+                  <h1 class="slider-description__title">Lorem Ipsum Dolor</h1>
+                  <h2 class="slider-description__subtitle">It will make all of your dreams come true</h2>
+                  <p class="slider-description__text">Semper sollicitudin gravida eget, vestibulum sit amet sapien.
+                  Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat.
+                  Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus.
+                  Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                  <figure class="slider-image clearfix">
+                    <img src="img/slider_iphone.png" alt=""/>
+                    <div class="slider-image__action"></div>
+                  </figure>
+                </div>
+              </li>
             </ul>
+              <a class="jcarousel-prev" href="#"></a>
+              <a class="jcarousel-next" href="#"></a>
           </div>
-        </div> <!-- end part-of-wrapper clearfix -->
+        </div>
       </div> <!-- end slider -->
     </section> <!-- end top part -->
 
@@ -203,5 +223,8 @@
       </div> <!-- end part-of-wrapper clearfix -->
     </footer>
   </div> <!-- end wrapper -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.jcarousel.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
