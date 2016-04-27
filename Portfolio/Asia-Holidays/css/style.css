@@ -1,6 +1,16 @@
 ﻿	body {
-		background: url(../img/background.png) repeat-y;
+		background: url(../img/background.png) repeat-x;
+		background-color: #0c739f;
 		height: 1060px;
+	}
+
+	h2 {
+		color: #424c43;
+		font-family: Tahoma;
+		font-size: 18px;
+		font-weight: 600;
+		margin: 15px 0 7px 0;
+		text-align: center;
 	}
 
 	.google-head {
@@ -32,7 +42,7 @@
 		margin-right: 36px;
 	}
 
-	.contacts-top li {
+	.contacts__info {
 		color: #41a1b9;
 		font-size: 12px;
 		font-family: Tahoma;
@@ -40,7 +50,7 @@
 		opacity: .8;
 	}
 
-	.contacts-top .top-li-contacts-top {
+	.contacts__info:first-child {
 		font-weight: bold;
 		opacity: .8;
 	}
@@ -50,48 +60,48 @@
 		float: right;
 	}
 
-	ul.nav-countries {
+	.countries__list {
 		margin: 30px;
 	}
 
-	.nav-countries li {
-		float: left; /* выстраивает элементы списка в один ряд */
+	.countries__item {
+		float: left;
 	}
 
-	.nav-countries li a {
-		background-position: center top; /* выравнивает фон вверх и по центру */
+	.countries__name {
+		background-position: center top;
 		background-repeat: no-repeat;
 		color: #128aa7;
 		display: block;
 		font-size: 10px;
 		font-family: Tahoma;
 		height: 20px;
-		padding-top: 44px; /* внутренний оступ чтобы текст был вне фона */
-		text-align: center;		
-		width: 58px; /* размеры указывает чтобы картинки полностью отобразились */	
+		padding-top: 44px;
+		text-align: center;
+		width: 58px;
 	}
 
-	.nav-countries .i-flag a {
+	.countries__list .i-flag a {
 		background-image: url(../img/i_flag.png);
 	}
 
-	.nav-countries .n-flag a {
+	.countries__list .n-flag a {
 		background-image: url(../img/n_flag.png);
 	}
 
-	.nav-countries .t-flag a {
+	.countries__list .t-flag a {
 		background-image: url(../img/t_flag.png);
 	}
 
-	.nav-countries .b-flag a {
+	.countries__list .b-flag a {
 		background-image: url(../img/b_flag.png);
 	}
 
-	.nav-countries .s-flag a {
+	.countries__list .s-flag a {
 		background-image: url(../img/s_flag.png);
 	}
 
-	.nav-countries .m-flag a {
+	.countries__list .m-flag a {
 		background-image: url(../img/m_flag.png);
 	}
 
@@ -121,14 +131,14 @@
         box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
         padding-left: 37px;
 	}
-	
-	.menu li{
+
+	.menu__item{
   		float: left;
   		list-style: none;
   		position: relative;
 	}
 
-	.menu li a{
+	.menu__link {
   		color: #fff;
   		display: block;
   		font-size: 14px;
@@ -147,10 +157,10 @@
   		position: absolute;
   		top: 50%;
   		right: 10px;
-  		width: 5px;	
+  		width: 5px;
 	}
 
-	.menu ul{
+	.menu__second-list {
   		left: 23px;
   		opacity: 0;
   		position: absolute;
@@ -170,7 +180,7 @@
 	}
 
 	.menu ul a{
- 		 padding: 0 10px;
+ 		padding: 0 10px;
 	}
 
 	/*** CONTENT ***/
@@ -181,42 +191,41 @@
 		float: left;
 	}
 
-	.leftColumn {
-		width: 210px;
-		float: left;
-	}
-
-	.centerColumn {
+	.center-column {
 		width: 579px;
 		float: left;
 	}
 
-	.rightColumn {
-		width: 210px;
+	.center-column__country {
 		float: left;
+		margin: 18px;
 	}
 
-	h2 {
-		color: #424c43;
-		font-family: Tahoma;
-		font-size: 18px;
-		font-weight: 600;
-		margin: 15px 0 7px 0;
+	.center-column__country-img {
+		border-radius: 5px;
+	}
+
+	.center-column__country-name {
 		text-align: center;
 	}
 
 	.sidebar {
+		width: 210px;
+		float: left;
+	}
+
+	.sidebar__list {
 		margin-bottom: 24px;
 		padding-left: 15px;
 	}
 
-	.sidebar li {
+	.sidebar__list li {
 		font-family: Tahoma;
 		font-size: 14px;
 		line-height: 23px;
 	}
 
-	.sidebar a {
+	.sidebar__list a {
 		color: #424c43;
 		text-decoration: none;
 	}
