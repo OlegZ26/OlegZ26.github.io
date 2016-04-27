@@ -31,7 +31,7 @@
 	float: left;
 	margin-left: 9px;
 	margin-top: 4px;
-	width: 285px;
+	width: 290px;
 }
 
 .phone img {
@@ -74,7 +74,7 @@
 
 .authorization-form form {
 	float: left;
-	width: 273px;
+	width: 274px;
 }
 
 .authorization-form input {
@@ -167,11 +167,13 @@
 	width: 909px;
 }
 
-.picture a {
+.picture__logo {
+	background-image: url(../img/logo.png);
 	display: block;
     position: relative;
-    top: 100px;
-    width: 266px;
+    top: 15px;
+    left: 15px;
+    width: 295px;
     height: 70px;
 }
 
@@ -325,7 +327,7 @@
 
 .search-cars h3 {
 	color: #154468;
-	font-family: Arial black;	
+	font-family: Arial black;
 }
 
 .search-cars h4 {
@@ -590,7 +592,7 @@
 	font-family: Arial;
 	font-size: 10px;
 	height: 17px;
-	outline: none;	
+	outline: none;
 }
 
 .search-tires-title {
@@ -621,7 +623,7 @@
 	width: 45px;
 }
 
-.search-tires-size select {	
+.search-tires-size select {
 	width: 50px;
 }
 
@@ -700,7 +702,7 @@
 	float: right;
 	font-family: 'Lucida Sans Unicoderegular';
 	height: 133px;
-	padding-left: 16px;
+	padding-left: 10px;
 	position: relative;
 	margin-right: 5px;
 	width: 250px;
@@ -1067,7 +1069,7 @@
 	border: 1px solid #a9b3b6;
 	border-radius: 10px;
 	height: 127px;
-	width: 137px;	
+	width: 137px;
 }
 
 .catalog-product-price {
@@ -1191,11 +1193,11 @@
 }
 
 .sitebar-right-wheels p {
-	height: 25px;	
+	height: 25px;
 }
 
 .sitebar-right-wheels p:first-child {
-	margin-top: -1px;	
+	margin-top: -1px;
 }
 
 .button-sitebar-right {

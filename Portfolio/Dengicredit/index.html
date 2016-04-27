@@ -42,13 +42,7 @@
 	<!-- ==============================================
 	Favicons
 	=============================================== -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-
-	<!-- ==============================================
-	JS
-	=============================================== -->
-  	<script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/modernizr.js"></script>
+	<link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
 
 </head>
 
@@ -96,124 +90,72 @@
 		<div class="container">
 			<div class="row">
 				<div class="column-40 form-column text-center">
-					<form action="send-mail.php" class="main-form">
+					<form method="post" action="/sender.php" class="main-form" id="requestForm">
 						<h4>Нужны деньги наличными?</h4>
 						<p class="main-form-description">Заполните заявку и получите решение банка через 30 минут</p>
-<!-- 						<label for="1-name">Фамилия <span>*</span></label> -->
-						<input type="text" name="1-name" id="1-name" class="required" placeholder="Фамилия*">
-<!--                         <label for="2-name">Имя <span>*</span></label> -->
-                        <input type="text" name="2-name" id="2-name" class="required" placeholder="Имя*">
-<!--                         <label for="3-name">Отчество <span>*</span></label> -->
-                        <input type="text" name="3-name" id="3-name" class="required" placeholder="Отчество*">
-<!--                         <label for="job">Трудоустройство <span>*</span></label> -->
-                        <select name="job" id="job">
-                            <option value="">Выберите свое трудоустройство</option>
-                            <option value="Afghanistan">Работаю не официально</option>
-                            <option value="Albania">Официально трудоустроен</option>
-                            <option value="Algeria">Работаю на СПД</option>
-                            <option value="Andorra">СПД</option>
-                            <option value="Angola">Пенсионер</option>
-                            <option value="Antarctica">Декретный отпуск</option>
-                            <option value="Antigua and Barbuda">Временно не работаю</option>
+						<input class="required" type="text" name="lastName" id="lastName" maxlength="70" placeholder="Фамилия*">
+                        <input class="required" type="text" name="firstName" id="firstName" maxlength="70" placeholder="Имя*">
+                        <input class="required" type="text" name="middleName" id="middleName" maxlength="70" placeholder="Отчество*">
+                        <select name="employment" id="employment">
+                            <option value="official">Выберите свое трудоустройство</option>
+                            <option value="official">Официально трудоустроен</option>
+                            <option value="officialPrivate">Работаю на СПД</option>
+                            <option value="private">СПД</option>
+                            <option value="pensioner">Пенсионер</option>
+                            <option value="unofficial">Работаю не официально</option>
+                            <option value="maternityLeave">Декретный отпуск</option>
+                            <option value="no">Временно не работаю</option>
                         </select>
-<!--                         <label for="age">Возраст (полных лет) <span>*</span></label> -->
-                        <select name="age" id="age">
-                            <option value="">Укажите свой возраст (полных лет)</option>
-                            <option value="Afghanistan">Менее 21</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="33">33</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                            <option value="36">36</option>
-                            <option value="37">37</option>
-                            <option value="38">38</option>
-                            <option value="39">39</option>
-                            <option value="40">40</option>
-                            <option value="41">41</option>
-                            <option value="42">42</option>
-                            <option value="43">43</option>
-                            <option value="44">44</option>
-                            <option value="45">45</option>
-                            <option value="46">46</option>
-                            <option value="47">47</option>
-                            <option value="48">48</option>
-                            <option value="49">49</option>
-                            <option value="50">50</option>
-                            <option value="51">51</option>
-                            <option value="52">52</option>
-                            <option value="53">53</option>
-                            <option value="54">54</option>
-                            <option value="55">55</option>
-                            <option value="56">56</option>
-                            <option value="57">57</option>
-                            <option value="58">58</option>
-                            <option value="59">59</option>
-                            <option value="60">60</option>
-                            <option value="61">61</option>
-                            <option value="62">62</option>
-                            <option value="63">63</option>
-                            <option value="64">64</option>
-                            <option value="65">65</option>
-                            <option value="66">66</option>
-                            <option value="67">67</option>
-                            <option value="68">68</option>
-                            <option value="69">69</option>
-                            <option value="70">70</option>
-                            <option value="more70">Более 70</option>
+                        <input input id="age" name="age" type="text" maxlength="2" placeholder="Укажите свой возраст (полных лет)">
+                        <input class="required" id="inn" name="inn" type="text" maxlength="10" placeholder="Ваши ИНН*">
+						<input class="required" id="phone" name="phone" type="text" maxlength="10" placeholder="Контактный телефон*">
+                        <select name="aim" id="aim">
+                            <option value="renovation">Укажите цель кредита</option>
+                            <option value="technics">Покупка техники</option>
+                            <option value="furniture">Покупка мебели</option>
+                            <option value="renovation">Ремонт</option>
+                            <option value="cure">Лечение</option>
+                            <option value="education">Образование</option>
+                            <option value="business">На бизнес</option>
+                            <option value="otherCredit">Погашение другого кредита</option>
+                            <option value="car">Покупка авто</option>
+                            <option value="fiesta">На свадьбу/юбилей</option>
+                            <option value="rest">На отдых/путешествия</option>
+                            <option value="other">Другое</option>
                         </select>
-<!--                         <label for="identCode">ИНН<span>*</span></label> -->
-                        <input type="text" name="identCode" id="identCode" class="required" placeholder="Ваши ИНН*">
-<!--                         <label for="city">Город<span>*</span></label> -->
-<!--                         <input type="text" name="city" id="city" class="required" placeholder="Город (название)*"> -->
-<!-- 						<label for="phone">Phone Number <span>*</span></label> -->
-						<input type="phone" name="phone" id="phone" class="required" placeholder="Контактный телефон*">
-<!--                         <label for="aim">Цель кредита <span>*</span></label> -->
-                        <select name="aim" id="job">
-                            <option value="">Укажите цель кредита</option>
-                            <option value="">Покупка техники</option>
-                            <option value="Afghanistan">Покупка мебели</option>
-                            <option value="Albania">Ремонт</option>
-                            <option value="Algeria">Лечение</option>
-                            <option value="Andorra">Образование</option>
-                            <option value="Angola">На бизнес</option>
-                            <option value="Antarctica">Погашение другого кредита</option>
-                            <option value="Antigua and Barbuda">Покупка авто</option>
-                            <option value="Angola">На свадьбу/юбилей</option>
-                            <option value="Antarctica">На отдых/путешествия</option>
-                            <option value="Antigua and Barbuda">Другое</option>
-                        </select>
-<!-- 						<label for="amount ">Сумма кредита (грн) <span>*</span></label> -->
-						<select name="amount " id="amount ">
-                            <option value="">Выберите желаемую сумму кредита</option>
-							<option value="">1000 - 2999</option>
-                            <option value="Afghanistan">3000 - 5000</option>
-                            <option value="Albania">5000 - 10 000</option>
-                            <option value="Algeria">10 000 - 15 000</option>
-                            <option value="Andorra">15 000 - 20 000</option>
-                            <option value="Angola">20 000 - 25 000</option>
-                            <option value="Antarctica">25 000 - 30 000</option>
-                            <option value="Antigua and Barbuda">30 000 - 35 000</option>
-                            <option value="Argentina">35 000 - 40 000</option>
-                            <option value="Armenia">40 000 - 45 000</option>
-                            <option value="Australia">45 000 - 50 000</option>
+						<select name="amount" id="amount">
+                            <option value="12000">Выберите желаемую сумму кредита</option>
+							<option value="1700">1000 - 3000</option>
+                            <option value="4000">3000 - 5000</option>
+                            <option value="7500">5000 - 10 000</option>
+                            <option value="12500">10 000 - 15 000</option>
+                            <option value="17500">15 000 - 20 000</option>
+                            <option value="22500">20 000 - 25 000</option>
+                            <option value="27500">25 000 - 30 000</option>
+                            <option value="32500">30 000 - 35 000</option>
+                            <option value="37500">35 000 - 40 000</option>
+                            <option value="42500">40 000 - 45 000</option>
+                            <option value="47500">45 000 - 50 000</option>
 						</select>
 						<div class="submit-holder">
 							<div class="submit-arrow animate-arrow">Оформляйте заявку <span>бесплатно</span> у нас на сайте*</div>
-							<input type="submit" name="submit" id="submit" value="Получить деньги">
+							<input class="button" type="submit" id="submit" value="Получить деньги">
 						</div>
 						<p class="disclaimer">Отправляя заявку, вы подтверждаете свое согласие на обработку ваших данных согласно ЗУ «О защите персональных данных».</p>
+<!--                         <?php                                                                    !!!Наверно это важная часть
+                            foreach ($partners as $partner) {
+                            echo '<input type="hidden" value="1" name="'.$partner.'" />'."\r\n";
+                            }
+                        ?> -->
 					</form>
+<!--                     <?php                                                                        !!!Наверно это важная часть
+                        function value($key) {
+                            global $params;
+                            if (isset($params) && isset($params[$key]))
+                                return $params[$key];
+                            return '';
+                        }
+                    ?> -->
 				</div>
 				<div class="column-60 clients">
 					<div class="row">
@@ -355,8 +297,32 @@
 	<!-- ==============================================
 	JS
 	=============================================== -->
-  	<script type="text/javascript" src="js/components.js"></script>
-  	<script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+  	<script src="js/components.js"></script>
+  	<script src="js/custom.js"></script>
+    <script src="js/processor.js"></script>
+    <script>
+        window.onload = function() {
+            $('#lastName').val('<?= value('lastName'); ?>');
+            $('#firstName').val('<?= value('firstName'); ?>');
+            $('#middleName').val('<?= value('middleName'); ?>');
+            $('#phone').val('<?= value('phone'); ?>');
+            $('#inn').val('<?= value('inn'); ?>');
+            $('#age').val('<?= value('age'); ?>');
+            $('#amount').val('<?= value('amount'); ?>');
+            $('#employment').val('<?= value('employment'); ?>');
+
+            var errorMessage = '<?= isset($message) ? $message : ''; ?>';
+            var $alert = $('.alert-box');
+            $alert.hide();
+            if (errorMessage.length) {
+                $alert.text(errorMessage);
+                $alert.show();
+                $alert.css({display:'block'});
+            }
+        };
+    </script>
 
 </body>
 </html>
