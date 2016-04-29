@@ -7,70 +7,77 @@
     <title>Cadastre-se</title>
 </head>
 <body>
-	<div class="wrap">
-		<div class="header">
-			<ul>
-				<li><a href="#">Meu YouBike</a></li>
-				<li><a href="#">Vender</a></li>
-				<li><a href="#">Forum</a></li>
-				<li><a href="#">Contato</a></li>
-				<li><a href="#">Ajuda</a></li>
-			</ul>
-			<div class="login-box">
-				<div class="login-text">
-					<span>Ola!</span>
-				<a href="#">Entrar</a>
-					<span>ou</span>
-				<a href="#">Cadastre-se</a>
-				</div> <!-- end login-text -->
+	<header class="header">
+		<ul class="navi">
+			<li class="navi__item">
+                <a class="navi__link" href="#">Meu YouBike</a>
+            </li>
+			<li class="navi__item">
+                <a class="navi__link" href="#">Vender</a>
+            </li>
+			<li class="navi__item">
+                <a class="navi__link" href="#">Forum</a>
+            </li>
+			<li class="navi__item">
+                <a class="navi__link" href="#">Contato</a>
+            </li>
+			<li class="navi__item">
+                <a class="navi__link" href="#">Ajuda</a>
+            </li>
+		</ul>
+		<div class="login">
+			<div class="login__box">
+				<span>Ola!</span>
+				<a class="login__link" href="#">Entrar</a>
+				<span>ou</span>
+				<a class="login__link" href="#">Cadastre-se</a>
+			</div> <!-- end login-text -->
+		</div>
+		<div class="ofertas">
+			<img class="ofertas__img" src="img/inventicons.png" alt="inventicons">
+			<span class="ofertas__text">Minhas Ofertas</span>
+		</div>
+	</header> <!-- end header -->
+	<div class="container">
+		<div class="content">
+			<div class="cadastre">
+				<span>Cadastre-se</span>
 			</div>
-			<div class="ofertas">
-				<img src="img/inventicons.png" alt="inventicons"><span>Minhas Ofertas</span>
-			</div>
-		</div> <!-- end header -->
-		<div class="container">
-			<div class="content">
-				<div class="cadastre">
-					<span>Cadastre-se</span>
+			<div class="registration-block">
+				<a class="facebook-btn" href="#"><img src="img/Facebook.png" alt="Log In with Facebook"></a>
+				<div class="row">
+					<p class="row__text">OU</p>
 				</div>
-				<div class="registration-form">
-					<button>
-						<img src="img/Facebook.png" alt="Log In with Facebook">
-					</button>
-					<div class="ou">
-						<p>OU</p>
+				<form class="registration-form" action="#" method="POST">
+					<div class="registration-form__item">
+						<input class="registration-form__input" type="text" name="first-name" placeholder="First Name" required>
 					</div>
-					<form action="#" method="POST">
-						<div class="form1">
-							<input type="text" name="first-name" placeholder="First Name" required>
-						</div>
-						<div class="form1">
-							<input type="text" name="last-name" placeholder="Last Name" required>
-						</div>
-						<div class="form1">
-							<input type="email" name="email" placeholder="Email Adress" required>
-						</div>
-						<div class="form1">
-							<input type="password" name="password" placeholder="Choose Password">
-						</div class="form1">
-						<div class="form1">
-							<input type="password" name="password-confirm" placeholder="Password Confirm">
-						</div>
-						<div class="form2">
-							<input type="checkbox" id="checkbox">
-							<label for="checkbox">Send me Youbike updates and tips</label>
-						</div>
-						<div class="form3">
+					<div class="registration-form__item">
+						<input class="registration-form__input" type="text" name="last-name" placeholder="Last Name" required>
+					</div>
+					<div class="registration-form__item">
+						<input class="registration-form__input" type="email" name="email" placeholder="Email Adress" required>
+					</div>
+					<div class="registration-form__item">
+						<input class="registration-form__input" type="password" name="password" placeholder="Choose Password">
+					</div>
+					<div class="registration-form__item">
+						<input class="registration-form__input" type="password" name="password-confirm" placeholder="Password Confirm">
+					</div>
+					<div class="registration-form__item">
+						<input type="checkbox" id="checkbox">
+						<label class="registration-form__label" for="checkbox">Send me Youbike updates and tips</label>
+					</div>
+					<div class="registration-form__button">
 						<input type="submit" value="">
-						</div>
-					</form>
-					<div class="form4">
-						<p>By clicking the button above, you agree to the Terms of Service <!-- Xiew our Privacy Policy. --></p>
-						<p>Xiew our Privacy Policy.</p>
 					</div>
-				</div> <!-- end registration-form -->
-			</div> <!-- end content -->
-		</div> <!-- end container -->
-	</div> <!-- end wrap -->
+				</form>
+				<div class="registration-form__notice">
+					<p>By clicking the button above, you agree to the Terms of Service</p>
+					<p>Xiew our Privacy Policy.</p>
+				</div>
+			</div> <!-- end registration-form -->
+		</div> <!-- end content -->
+	</div> <!-- end container -->
 </body>
 </html>

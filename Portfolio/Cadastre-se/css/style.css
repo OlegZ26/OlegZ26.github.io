@@ -9,8 +9,8 @@
     font-style: normal;
 }
 
-.wrap {
-	 font-family: "Helvetica Neue Cyrthin";
+body {
+	font-family: "Helvetica Neue Cyrthin";
 }
 
 /* Header */
@@ -22,16 +22,16 @@
 	width: 1215px;
 }
 
-.header ul {
+.navi {
 	float: left;
 	margin-left: 440px;
 }
 
-.header ul li {
+.navi__item {
 	float: left;
 }
 
-.header ul li a {
+.navi__link {
 	color: #60b5ed;
 	display: block;
 	font-size: 14px;
@@ -41,12 +41,12 @@
 	text-decoration: none;
 }
 
-.header ul li a:hover {
+.navi__link:hover {
 	background-color: #4eabda;
 	color: #fff;
 }
 
-.login-box {
+.login {
 	background-image: url(../img/Layer.png);
 	float: right;
 	height: 36px;
@@ -54,7 +54,7 @@
 	width: 191px;
 }
 
-.login-text {
+.login__box {
 	color: #fff;
 	font-size: 14px;
 	height: 36px;
@@ -63,7 +63,7 @@
 	width: 180px;
 }
 
-.login-text a {
+.login__link {
 	color: #fff;
 }
 
@@ -75,19 +75,19 @@
 	width: 161px;
 }
 
-.ofertas img {
-	padding-top: 2px;
-}
-
-.ofertas span {
+.ofertas__text {
 	color: #fff;
 	display: block;
-	font-size: 14px;
 	float: right;
+	font-size: 14px;
 	height: 36px;
 	line-height: 36px;
 	padding-left: 11px;
 	width: 108px;
+}
+
+.ofertas__img {
+	padding-top: 2px;
 }
 
 /* Content */
@@ -123,28 +123,29 @@
 	width: 560px;
 }
 
-.registration-form {
+.registration-block {
 	background-color: rgba(0, 0, 0, 0.6);
 	height: 549px;
 	margin: 0 auto;
 	width: 560px;
 }
 
-.registration-form button {
+.facebook-btn {
 	border: 0;
+	display: block;
 	border-radius: 5px;
 	height: 35px;
-	margin: 36px 142px 25px 142px;
-	padding: 0;
+	margin: 0 142px 25px 142px;
+	padding-top: 30px;
 }
 
-.ou {
+.row {
 	height: 20px;
 	margin: 0px 142px 25px 142px;
 	width: 276px;
 }
 
-.ou	p {
+.row__text {
 	background-image: url(../img/Layer2.png);
 	color: #999999;
 	font-size: 14px;
@@ -152,11 +153,11 @@
 	text-align: center;
 }
 
-.form1 {
+.registration-form__item {
 	margin: 17px 142px 17px 142px;
 }
 
-.form1 input {
+.registration-form__input {
 	background-color: #0f0e0e;
 	border: 0;
 	border-bottom: 1px solid #474747;
@@ -165,7 +166,7 @@
 	width: 257px;
 }
 
-.form1 input:hover {
+.registration-form__input:hover {
 	background-color: #1b5288;
 	box-shadow: 0px 0px 20px 2px rgba(27,82,136,1);
 	border: none;
@@ -173,7 +174,7 @@
 	width: 255px;
 }
 
-.form1 input:focus {
+.registration-form__input:focus {
 	background-color: #1b5288;
 	border: none;
 	color: #cccccc;
@@ -181,26 +182,18 @@
 	width: 255px;
 }
 
-.form2 {
-	margin: 20px 142px 20px 142px;
-}
-
-.form2 label {
+.registration-form__label {
 	color: #cccccc;
 	font-size: 14px;
 }
 
-.form2 input {
-
-}
-
-.form3 {
+.registration-form__button {
 	height: 31px;
 	margin: 20px 209px 20px 198px;
 	width: 151px;
 }
 
-.form3 input {
+.registration-form__button input {
 	background-image: url(../img/Button.png);
 	border: 0;
 	border-radius: 3px;
@@ -210,13 +203,13 @@
 	width: 151px;
 }
 
-.form4 {
+.registration-form__notice {
 	height: 30px;
 	margin: 10px 124px 10px 124px;
 	width: 301px;
 }
 
-.form4 p {
+.registration-form__notice p {
 	color: #cccccc;
 	font-size: 11px;
 	line-height: 15px;
