@@ -8,6 +8,7 @@ class Request
 	{
 		$this->params = array(
 			'ip' => $_SERVER['REMOTE_ADDR'],
+            // 'productType' => $_SERVER['cardCredit'],   //// я добавил поле
 			'firstName'  => $this->getRequest('firstName'),
 			'lastName'   => $this->getRequest('lastName'),
 			'middleName' => $this->getRequest('middleName'),

@@ -82,6 +82,11 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h2.block-title {
+    padding: 5px 5px;
+    margin: 25px 0 10px 0;
+}
+
 h3 {
 	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-size: 28px;
@@ -116,6 +121,10 @@ h6 {
 
 p {
 	margin-bottom: 20px;
+}
+
+p.bank-name {
+    margin-bottom: 10px;
 }
 
 strong {
@@ -220,6 +229,10 @@ input[type="submit"], button, a.button {
 	font-weight: 600;
 }
 
+input[type="submit"], a.button__success {
+    font-size: 20px;
+}
+
 select, option {
 	cursor: pointer;
 }
@@ -248,6 +261,10 @@ input.input-error {
 
 section {
 	padding: 30px 0;
+}
+
+section.section-success {
+    padding: 0;
 }
 
 .section-notification {
@@ -901,6 +918,10 @@ p.intro-description {
 
 ul.intro-features {
 	margin-top: 30px;
+}
+
+ul.intro-features-success {
+    margin-top: 20px;
 }
 
 ul.intro-features li {

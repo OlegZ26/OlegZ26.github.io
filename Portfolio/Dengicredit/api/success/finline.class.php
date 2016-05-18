@@ -11,6 +11,8 @@ class Module_finline extends Module
 	{
 		$params = array(
 			'partner' => '2678',
+			'productType' => 'cardCredit',     // Добавил
+			'offerCode' => 'cardCredit',	  // Добавил
 			'ip' => $data->get('ip'),
 			'firstName'  => $data->get('firstName'),
 			'lastName'   => $data->get('lastName'),
@@ -23,7 +25,7 @@ class Module_finline extends Module
 			'employment' => $data->get('employment'),
 			'aim' => $data->get('aim'),
 			'date_time' => date('r'),
-      'identCode' => $data->inn(),
+            'identCode' => $data->inn(),
 		);
 
 		$query = http_build_query($params);

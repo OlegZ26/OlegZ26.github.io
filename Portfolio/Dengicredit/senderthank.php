@@ -4,9 +4,9 @@
 date_default_timezone_set("Europe/Helsinki");
 
 //require_once(__DIR__.'/api/logger.class.php');
-require_once(__DIR__.'/api/request.class.php');
-require_once(__DIR__.'/api/module.class.php');
-require_once(__DIR__.'/api/mailer.class.php');
+require_once(__DIR__.'/api/success/request.class.php');                ///   /success  //
+require_once(__DIR__.'/api/success/module.class.php');                 ///   /success  //
+require_once(__DIR__.'/api/success/mailer.class.php');                 ///   /success  //
 
 $request = new Request();
 $modules = array();
@@ -18,7 +18,7 @@ $idname  = array(
 foreach ($idname as $id => $name)
 {
 	if ($request->get($id) == 1) {
-		require_once(__DIR__.'/api/'.$name.'.class.php');
+		require_once(__DIR__.'/api/success/'.$name.'.class.php');        ///   /success  //
 		$classname = 'Module_'.$name;
 		$modules[] = new $classname($id);
 	}
@@ -46,7 +46,7 @@ Mailer::send($request->params(), $result);
 if ($success)
 {
     header("HTTP/1.0 301 Moved Permanently");
-    header("Location: /success.php");
+    header("Location: /successcard.php");
 }
 else
 {

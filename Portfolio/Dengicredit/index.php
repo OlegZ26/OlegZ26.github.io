@@ -19,11 +19,11 @@
 	<!-- ==============================================
 	CSS
 	=============================================== -->
-	<link rel="stylesheet" href="css/rev-grid.css" media="all">
-	<link rel="stylesheet" href="css/font-awesome.min.css" media="all">
-	<link rel="stylesheet" href="css/base.css" media="all">
-	<link rel="stylesheet" href="css/first-demo.css" media="all">
-	<link rel="stylesheet" href="css/responsive.css" media="all">
+	<link rel="stylesheet" href="css/rev-grid.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/first-demo.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 	<!--[if lt IE 9]>
 		<script src="js/html5.js"></script>
@@ -39,29 +39,16 @@
 	=============================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%7cPT+Sans:300,400,600' rel='stylesheet' type='text/css'>
 
-	<!-- ==============================================
-	Favicons
-	=============================================== -->
-	<link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
-
 </head>
 
 <body class="no-preloader" id="top">
-
-	<div class="preloader">
-		<div class="preloader-logo">
-			<div class="preloader-spinner"></div>
-			<p>Загрузка Деньги Кредит</p>
-		</div>
-	</div>
 
 	<section class="section intro">
 		<div class="container container-back">
 			<div class="row">
 				<div class="column-1000 text-center intro-heading-block">
-					<img src="img/logo-2.png" alt="approach" title="Approach Landing Page" class="logo">
+					<img src="img/logo-2.png" alt="Деньги Кредит" title="Деньги Кредит" class="logo">
 					<h1>Деньги Кредит - Кредит наличными каждому!</h1>
-<!-- 					<h5>*Мы не гарантируем 100% получение кредита, но мы гарантируем лучшие условия на рынке Украины</h5> -->
 				</div>
 			</div>
 			<div class="row" id="middle-top">
@@ -77,7 +64,6 @@
                                 <li><img src="img/icon-check.png" alt="check icon">Заполняете заявку в любое время</li>
 								<li><img src="img/icon-check.png" alt="check icon">Заявка отправится сразу в 3 банка</li>
 								<li><img src="img/icon-check.png" alt="check icon">Выбираете лучшее предложение</li>
-                                <!-- <li><img src="img/icon-check.png" alt="check icon">Безопасно</li> -->
 							</ul>
 						</div>
 					</div>
@@ -93,11 +79,11 @@
 					<form method="post" action="/sender.php" class="main-form" id="requestForm">
 						<h4>Нужны деньги наличными?</h4>
 						<p class="main-form-description">Заполните заявку и получите решение банка через 30 минут</p>
-						<input class="required" type="text" name="lastName" id="lastName" maxlength="70" placeholder="Фамилия*">
-                        <input class="required" type="text" name="firstName" id="firstName" maxlength="70" placeholder="Имя*">
-                        <input class="required" type="text" name="middleName" id="middleName" maxlength="70" placeholder="Отчество*">
-                        <select name="employment" id="employment">
-                            <option value="official">Выберите свое трудоустройство</option>
+						<input class="required" type="text" name="lastName" id="lastName" maxlength="70" placeholder="Фамилия*" title="Фамилия">
+                        <input class="required" type="text" name="firstName" id="firstName" maxlength="70" placeholder="Имя*" title="Имя">
+                        <input class="required" type="text" name="middleName" id="middleName" maxlength="70" placeholder="Отчество*" title="Отчество">
+                        <select class="required" name="employment" id="employment" title="Трудоустройство">
+                            <option value="official">Трудоустройство</option>
                             <option value="official">Официально трудоустроен</option>
                             <option value="officialPrivate">Работаю на СПД</option>
                             <option value="private">СПД</option>
@@ -106,10 +92,10 @@
                             <option value="maternityLeave">Декретный отпуск</option>
                             <option value="no">Временно не работаю</option>
                         </select>
-                        <input input id="age" name="age" type="text" maxlength="2" placeholder="Укажите свой возраст (полных лет)">
-                        <input class="required" id="inn" name="inn" type="text" maxlength="10" placeholder="Ваши ИНН*">
-						<input class="required" id="phone" name="phone" type="text" maxlength="10" placeholder="Контактный телефон*">
-                        <select name="aim" id="aim">
+                        <input class="required" id="city" name="city" type="text" maxlength="100" placeholder="Город*" title="Город">
+                        <input class="required" id="inn" name="inn" type="text" maxlength="10" placeholder="Ваши ИНН*" title="ИНН">
+						<input class="required" id="phone" name="phone" type="text" maxlength="10" placeholder="Контактный телефон*" title="Контактный телефон">
+                        <select class="required" name="aim" id="aim" title="Цель кредита">
                             <option value="renovation">Укажите цель кредита</option>
                             <option value="technics">Покупка техники</option>
                             <option value="furniture">Покупка мебели</option>
@@ -123,8 +109,8 @@
                             <option value="rest">На отдых/путешествия</option>
                             <option value="other">Другое</option>
                         </select>
-						<select name="amount" id="amount">
-                            <option value="12000">Выберите желаемую сумму кредита</option>
+						<select class="required" name="amount" id="amount" title="Желаемая сумма кредита">
+                            <option value="12000">Желаемая сумма кредита</option>
 							<option value="1700">1000 - 3000</option>
                             <option value="4000">3000 - 5000</option>
                             <option value="7500">5000 - 10 000</option>
@@ -142,20 +128,21 @@
 							<input class="button" type="submit" id="submit" value="Получить деньги">
 						</div>
 						<p class="disclaimer">Отправляя заявку, вы подтверждаете свое согласие на обработку ваших данных согласно ЗУ «О защите персональных данных».</p>
-<!--                         <?php                                                                    !!!Наверно это важная часть
+                        <?php
+                            $partners = array('module_f');
                             foreach ($partners as $partner) {
                             echo '<input type="hidden" value="1" name="'.$partner.'" />'."\r\n";
                             }
-                        ?> -->
+                        ?>
 					</form>
-<!--                     <?php                                                                        !!!Наверно это важная часть
+                    <?php
                         function value($key) {
                             global $params;
                             if (isset($params) && isset($params[$key]))
                                 return $params[$key];
                             return '';
                         }
-                    ?> -->
+                    ?>
 				</div>
 				<div class="column-60 clients">
 					<div class="row">
@@ -282,47 +269,12 @@
 		</div>
 	</section>
 
-	<div id="thanks-popup" class="section thanks-popup mfp-hide">
- 		<div class="thanks-heading">
- 			<h1>Спасибо за доверие!</h1>
- 		</div>
- 		<div class="thanks-body">
- 			<p>Наши специалисты уже обрабатывают вашу заявку!<br>
-			И в ближайшее время (рабочее время) с вами свяжутся.</p>
-<!-- 			<p>Хотие получить кредитную карту для удобных расчетов?</p>
-			<a class="button orange" href="#">Оформляйте её здесь</a> -->
- 		</div>
-	</div>
-
 	<!-- ==============================================
 	JS
 	=============================================== -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
   	<script src="js/components.js"></script>
-  	<script src="js/custom.js"></script>
-    <script src="js/processor.js"></script>
-    <script>
-        window.onload = function() {
-            $('#lastName').val('<?= value('lastName'); ?>');
-            $('#firstName').val('<?= value('firstName'); ?>');
-            $('#middleName').val('<?= value('middleName'); ?>');
-            $('#phone').val('<?= value('phone'); ?>');
-            $('#inn').val('<?= value('inn'); ?>');
-            $('#age').val('<?= value('age'); ?>');
-            $('#amount').val('<?= value('amount'); ?>');
-            $('#employment').val('<?= value('employment'); ?>');
-
-            var errorMessage = '<?= isset($message) ? $message : ''; ?>';
-            var $alert = $('.alert-box');
-            $alert.hide();
-            if (errorMessage.length) {
-                $alert.text(errorMessage);
-                $alert.show();
-                $alert.css({display:'block'});
-            }
-        };
-    </script>
 
 </body>
 </html>
