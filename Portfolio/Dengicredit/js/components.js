@@ -51,7 +51,7 @@ Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
 
 
 /* ==================================================================
-SmoothScroll 
+SmoothScroll
 
 Licensed under the terms of the MIT license.
 Authors: Balazs Galambosi: maintainer (CHANGELOG.txt) - Patrick Brunner (patrickb1991@gmail.com) - Michael Herf: ssc_pulse Algorithm
