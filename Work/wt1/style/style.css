@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+svg {
+	width: 1000px;
+	height: 500px;
+}
+
+.wrap {
+	background: url(../img/fon.png);
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.point {
+	height: 12px;
+	width: 12px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+
+.point--A {
+	background-color: #ffff00;
+	position: absolute;
+	top: 150px;
+	left: 154px;
+}
+
+.point--B {
+	position: absolute;
+	top: 327px;
+	left: 494px;
+}
+
+.point--C {
+	position: absolute;
+	top: 214px;
+	left: 833px;
+}
+
+.point--D {
+	position: absolute;
+	top: 405px;
+	left: 783px;
+}
+
+.point__shadow1 {
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	background-color: rgba(255,255,0,0.5);
+	position: absolute;
+	top: -4px;
+	left: -4px;
+}
+
+.point__shadow2 {
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background-color: rgba(255,255,0,0.2);
+	position: absolute;
+	top: -9px;
+	left: -9px;
+}
+
+.point__shadow1--white {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.point__shadow2--white {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.point__name {
+	color: #fff;
+	font-family: Sans-serif;
+	font-size: 11px;
+	width: 50px;
+	position: absolute;
+	top: 30px;
+	left: -8px;
+}
+
+.hidden {
+	display: none;
+}
