@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<script type="text/template" id="wrapper-template">       			<!-- шаблон для всего нашего приложения, вставляем каркас приложения -->
+<script type="text/template" id="wrapper-template">
 	<div class="wrapper">
 		<h1>My First To Do List</h1>
-		<ul class="item-list"></ul>									<!-- в этот ul при помощи jquery вставляем отрендереные элементы -->
+		<ul class="item-list"></ul>
 		<div class="controlls">
 			<input type="text" class="item-value">
 			<button class="item-add">Add</button>
@@ -19,14 +19,14 @@
 	</div>
 </script>
 
-<script type="text/template" id="list-template">         			<!-- шаблон для элементов списка, которые мы будем выводить на страницу -->
+<script type="text/template" id="list-template">
 	<% for (var i = 0; i < data.length; i++) { %>
 		<li class="item-page-elem"> <input class="item-text-edit" type="text" value="<%= data[i] %>">
 			<span data-value="<%= data[i] %>" class="item-delete">X</span>
 			<span class="item-edit">0</span>
 		</li>
 	<%	}; %>
-</script> 															<!-- data атрибут (data-value) что бы хранить служебную инфо в тегах -->
+</script>
 
 </body>
 </html>
